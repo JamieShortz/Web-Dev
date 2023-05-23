@@ -1,0 +1,138 @@
+body {
+background-color: hsl(217, 54%, 11%);
+}
+
+#box{
+margin: auto;
+position:relative;
+width: 300px;
+border-radius: 15px;
+padding: 25px;
+background-color: hsl(216, 50%, 16%);
+filter: drop-shadow(0 20px 25px hsl(216, 100%, 6%));
+}
+
+.image{
+border-radius: 10px;
+cursor:pointer;
+color: hsl(178, 100%, 50%);
+}
+.view{
+margin: auto;
+position:absolute;
+top: 150px;
+left: 154px;
+cursor:pointer;
+transition: .1s background ease;
+border-radius: 10px;
+opacity: 0;
+}
+.view:hover{
+background-color: hsl(178, 100%, 50%);
+opacity: 0.5;
+top: 25px;
+left: 25px;
+padding:126px;
+}
+
+#name{
+font-family: 'Outfit';
+color: hsl(0, 0%, 100%);
+cursor:pointer;
+transition: .3s background ease;
+}
+#name:hover{
+color: hsl(178, 100%, 50%);
+}
+.decstyle::after{
+	content: "\a";
+	white-space: pre;
+}
+.description{
+font-family: 'Outfit';
+font-weight: 400;
+font-size: 18px;
+color: hsl(215, 51%, 70%);
+}
+.crypto{
+display: inline-block;
+margin-right: 2px;
+}
+#icon{
+display: inline-block;
+margin-right: 2px;
+}
+#currency{
+display: inline-block;
+font-family: 'Outfit';
+font-weight: 300;
+color: hsl(178, 100%, 50%);
+position:relative;
+bottom: 3px;
+}
+#clock{
+display: inline-block;
+margin-right: 2px;
+}
+.timer{
+display: inline-block;
+float: right;
+}
+#time{
+display: inline-block;
+font-family: 'Outfit';
+font-weight: 300;
+color: hsl(215, 51%, 70%);
+position:relative;
+bottom: 2px;
+}
+hr {
+color: hsl(215, 32%, 27%);
+}
+.profile{
+display: inline-block;
+border-style: solid;
+border-width: 1.5px;
+border-radius: 20px;
+border-color: hsl(0, 0%, 100%);
+margin-right: 7px;
+}
+#creation{
+display: inline-block;
+font-family: 'Outfit';
+font-weight: 300;
+color: hsl(215, 51%, 70%);
+position:relative;
+bottom: 7px;
+}
+#user{
+color: hsl(0, 0%, 100%);
+cursor:pointer;
+transition: .1s background ease;
+}
+
+#user:hover{
+color: hsl(178, 100%, 50%);
+}
+
+@media only screen and (min-width: 375px){
+ .pagewrap{
+  margin: auto;
+  position:relative;
+  top: 50px;
+  width: 375px;
+  height: 650px;
+  overflow-x: hidden;
+ }
+}
+@media only screen and (min-width: 1440px){
+ .pagewrap{
+  margin: auto;
+  position:relative;
+  top: 150px;
+  width: 1440px;
+ }
+}
+
+.attribution { font-size: 11px; text-align: center; color: hsl(178, 100%, 50%); }
+.attribution a { color: hsl(215, 51%, 70%); }

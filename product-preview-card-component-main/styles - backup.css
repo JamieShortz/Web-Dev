@@ -1,0 +1,76 @@
+body {
+  background-color: hsl(30, 38%, 92%);
+}
+
+.pagewrap{
+ position:fixed; left:700px; top:200px;
+}
+.image{
+ float: right;
+ border-radius:10px;
+}
+
+#type{
+ font-family: 'Montserrat';
+ font-weight: 500;
+ font-size: 14px;
+ color: hsl(228, 12%, 48%);
+}
+#product{
+ font-family: 'Fraunces';
+ font-weight: 700;
+ color: hsl(212, 21%, 14%);
+}
+.description{
+ font-family: 'Montserrat';
+ font-weight: 500;
+ font-size: 14px;
+ color: hsl(228, 12%, 48%);
+}
+#discount{
+ font-family: 'Fraunces';
+ font-weight: 700;
+ color:hsl(158, 36%, 37%);
+}
+#standard{
+ font-family: 'Montserrat';
+ font-weight: 500;
+ color: hsl(228, 12%, 48%);
+}
+#add{
+ font-family: 'Montserrat';
+ font-weight: 700;
+}
+
+.rightside{
+ border-radius:10px;
+ background-color: hsl(0, 0%, 100%);
+
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.wordstyle::after{
+	content: "\a";
+	white-space: pre;
+}
+
+.descstyle::after{
+	content: "\a\a";
+	white-space: pre;
+}
+
+#button{
+  border:0;
+  background:hsl(158, 36%, 37%);
+  padding:.3rem;
+  color:white;
+  margin:1rem;
+  cursor:pointer;
+  transition: .3s background ease;
+  border-radius:10px;
+}
+ #button:hover{
+    background:hsl(158, 36%, 17%);
+  }

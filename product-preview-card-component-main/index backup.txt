@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Fraunces' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <a href="#google"></a>
+
+  <div id="google"></div>
+
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+<body>
+
+ <div class="pagewrap">
+
+  <div class="image">
+    <table border = '0'>
+      <tbody>
+        <tr>
+          <td>
+            <img class="image" src="images/image-product-desktop.jpg" width="300" alt="Image for Desktop"/>
+          </td>     
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="rightside">
+    <table border = '0'>
+      <tbody>
+        <tr>      
+          <td>
+            <div>
+            <h3 id="type">PERFUME</h3> 
+            <h2 id="product"><span class="wordstyle">Gabrielle</span> <span class="wordstyle">Essence Eau</span> <span class="wordstyle">De Parfum</span></h2>
+            <div class="description"><p>
+              <span class="descstyle">A floral, solar and voluptuous</span>
+              <span class="descstyle">interpretation composed by</span> 
+              <span class="descstyle">Olivier Polge, Perfumer-Creator</span> 
+              <span class="descstyle">for the House of CHANEL.</span></p>
+            </div>
+            <p id="discount">$149.99</p>
+            <p id="standard"><s>$169.99</s></p>
+            <button id=button>
+              <svg id="icon" width="15" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z" fill="#FFF"/></svg>
+              <p id="add">Add to Cart</p>
+            </button>
+          </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Jamie Samuels</a>.
+  </div>
+</div>
+</body>
+</html>
