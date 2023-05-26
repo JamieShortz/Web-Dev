@@ -35,6 +35,7 @@ color: hsl(240, 6%, 50%);
 
 #line{
 color: hsl(240, 5%, 91%);
+width: auto;
 }
 
 .desktop{
