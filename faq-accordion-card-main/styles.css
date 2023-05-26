@@ -19,10 +19,7 @@ font-family: 'Kumbh Sans';
 font-weight: 700;
 color: hsl(238, 29%, 16%);
 }
-.faqs{
 
-
-}
 .question{
 font-family: 'Kumbh Sans';
 font-size: 12px;
@@ -52,14 +49,22 @@ position:absolute;
 right: 1052px;
 top: 235px;
 }
+.arrow{
+float: right;
+}
 
 .faqs{
 margin: auto;
 position:absolute;
 left: 460px;
 top: 100px;
-height: 20px;
+height: 5px;
 width: 575px;
+}
+
+.decstyle::after{
+	content: "\a";
+	white-space: pre;
 }
 
 @media only screen and (min-width: 375px){
