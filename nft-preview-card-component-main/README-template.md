@@ -39,13 +39,14 @@ Users should be able to:
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- CSS Grid
+- HTML
+- CSS
 
 ### What I learned
-
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I learned the proper use of containers in which they have a use that mimicks a child/parent relationship 
+where each subsequent containers within are heavily influanced if they were used with the "position property."
+Using floats only push an element to another element or to the left-most/right-most side of anoter element 
+that contains them.
 
 To see how you can add code snippets, see below:
 
