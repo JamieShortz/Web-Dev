@@ -25,17 +25,22 @@ font-family: 'Kumbh Sans';
 font-size: 12px;
 font-weight: 400;
 color: hsl(237, 12%, 33%);
+float: left;
+width: 400px;
 }
 .answer{
 font-family: 'Kumbh Sans';
 font-size: 12px;
 font-weight: 400;
 color: hsl(240, 6%, 50%);
+float: left;
+width: 400px;
 }
 
 #line{
 color: hsl(240, 5%, 91%);
-width: auto;
+width: 345px;
+float: left;
 }
 
 .desktop{
@@ -58,8 +63,8 @@ float: right;
 margin: auto;
 position:absolute;
 left: 460px;
-top: 100px;
-height: 5px;
+top: 20px;
+bottom: 5px
 width: 575px;
 }
 
