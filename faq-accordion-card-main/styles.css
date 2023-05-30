@@ -20,20 +20,75 @@ font-weight: 700;
 color: hsl(238, 29%, 16%);
 }
 
-.question{
+.question1{
 font-family: 'Kumbh Sans';
 font-size: 12px;
 font-weight: 400;
 color: hsl(237, 12%, 33%);
-float: left;
 width: 400px;
 }
-.answer{
+.question2{
+font-family: 'Kumbh Sans';
+font-size: 12px;
+font-weight: 400;
+color: hsl(237, 12%, 33%);
+width: 400px;
+}
+.question3{
+font-family: 'Kumbh Sans';
+font-size: 12px;
+font-weight: 400;
+color: hsl(237, 12%, 33%);
+width: 400px;
+}
+.question4{
+font-family: 'Kumbh Sans';
+font-size: 12px;
+font-weight: 400;
+color: hsl(237, 12%, 33%);
+width: 400px;
+}
+.question5{
+font-family: 'Kumbh Sans';
+font-size: 12px;
+font-weight: 400;
+color: hsl(237, 12%, 33%);
+width: 400px;
+}
+
+.answer1{
 font-family: 'Kumbh Sans';
 font-size: 12px;
 font-weight: 400;
 color: hsl(240, 6%, 50%);
-float: left;
+width: 400px;
+}
+.answer2{
+font-family: 'Kumbh Sans';
+font-size: 12px;
+font-weight: 400;
+color: hsl(240, 6%, 50%);
+width: 400px;
+}
+.answer3{
+font-family: 'Kumbh Sans';
+font-size: 12px;
+font-weight: 400;
+color: hsl(240, 6%, 50%);
+width: 400px;
+}
+.answer4{
+font-family: 'Kumbh Sans';
+font-size: 12px;
+font-weight: 400;
+color: hsl(240, 6%, 50%);
+width: 400px;
+}
+.answer5{
+font-family: 'Kumbh Sans';
+font-size: 12px;
+font-weight: 400;
+color: hsl(240, 6%, 50%);
 width: 400px;
 }
 
@@ -56,7 +111,7 @@ right: 1052px;
 top: 235px;
 }
 .arrow{
-float: right;
+
 }
 
 .faqs{
@@ -64,7 +119,7 @@ margin: auto;
 position:absolute;
 left: 460px;
 top: 20px;
-bottom: 5px
+height: 20px; 
 width: 575px;
 }
 
