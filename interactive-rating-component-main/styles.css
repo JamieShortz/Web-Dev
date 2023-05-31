@@ -1,0 +1,20 @@
+body {
+background-color: hsl(216, 12%, 8%);
+}
+
+.box{
+margin: auto;
+position:relative;
+width: 300px;
+border-radius: 15px;
+padding: 25px;
+background-color: hsl(213, 19%, 18%);
+}
+.rate1{
+
+height: 15px;
+width: 15px;
+padding: 15px;
+border-radius: 25px;
+background-color: hsl(216, 12%, 54%);
+}
