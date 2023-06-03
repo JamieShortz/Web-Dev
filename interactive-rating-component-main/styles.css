@@ -5,16 +5,125 @@ background-color: hsl(216, 12%, 8%);
 .box{
 margin: auto;
 position:relative;
-width: 300px;
+height: 335px;
+width: 350px;
 border-radius: 15px;
-padding: 25px;
+padding: 45px;
 background-color: hsl(213, 19%, 18%);
 }
-.rate1{
 
-height: 15px;
-width: 15px;
-padding: 15px;
-border-radius: 25px;
+.star{
+padding: 20px;
+border-radius: 30px;
 background-color: hsl(216, 12%, 54%);
 }
+
+#question{
+font-family: 'Overpass';
+font-size: 25px;
+font-weight: 700;
+color: hsl(0, 0%, 100%);
+}
+.description{
+font-family: 'Overpass';
+font-size: 15px;
+font-weight: 400;
+color: hsl(217, 12%, 63%);
+}
+
+.rate1{
+text-align: center;
+height: 15px;
+width: 15px;
+padding: 20px;
+border-radius: 30px;
+background-color: hsl(216, 12%, 54%);
+margin: auto;
+position:absolute;
+left: 30px;
+bottom: 95px;
+}
+.rate2{
+text-align: center;
+height: 15px;
+width: 15px;
+padding: 20px;
+border-radius: 30px;
+background-color: hsl(216, 12%, 54%);
+margin: auto;
+position:absolute;
+left: 110px;
+bottom: 95px;
+}
+.rate3{
+text-align: center;
+height: 15px;
+width: 15px;
+padding: 20px;
+border-radius: 30px;
+background-color: hsl(216, 12%, 54%);
+margin: auto;
+position:absolute;
+left: 190px;
+bottom: 95px;
+}
+.rate4{
+text-align: center;
+height: 15px;
+width: 15px;
+padding: 20px;
+border-radius: 30px;
+background-color: hsl(216, 12%, 54%);
+margin: auto;
+position:absolute;
+left: 270px;
+bottom: 95px;
+}
+.rate5{
+text-align: center;
+height: 15px;
+width: 15px;
+padding: 20px;
+border-radius: 30px;
+background-color: hsl(216, 12%, 54%);
+margin: auto;
+position:absolute;
+left: 355px;
+bottom: 95px;
+}
+
+#button{
+margin: auto;
+position:absolute;
+bottom: 25px;
+padding: 10px;
+width: 370px;
+right: 35px;
+border-radius: 20px;
+letter-spacing: 2px;
+background-color: hsl(25, 97%, 53%);
+color: hsl(0, 0%, 100%);
+border: none;
+}
+
+@media only screen and (min-width: 375px){
+ .pagewrap{
+  margin: auto;
+  position:relative;
+  top: 50px;
+  width: 375px;
+  height: 650px;
+  overflow-x: hidden;
+ }
+}
+@media only screen and (min-width: 1440px){
+ .pagewrap{
+  margin: auto;
+  position:relative;
+  top: 200px;
+  width: 1440px;
+ }
+}
+
+.attribution { font-size: 11px; text-align: center; color: hsl(0, 0%, 100%); }
+.attribution a { color: hsl(228, 45%, 44%); }
