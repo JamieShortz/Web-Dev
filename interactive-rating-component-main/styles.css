@@ -64,7 +64,7 @@ border-radius: 30px;
 background-color: hsl(216, 12%, 54%);
 margin: auto;
 position:absolute;
-left: 190px;
+left: 192px;
 bottom: 95px;
 }
 .rate4{
@@ -76,7 +76,7 @@ border-radius: 30px;
 background-color: hsl(216, 12%, 54%);
 margin: auto;
 position:absolute;
-left: 270px;
+left: 276px;
 bottom: 95px;
 }
 .rate5{
@@ -88,7 +88,7 @@ border-radius: 30px;
 background-color: hsl(216, 12%, 54%);
 margin: auto;
 position:absolute;
-left: 355px;
+left: 357px;
 bottom: 95px;
 }
 
@@ -141,7 +141,7 @@ color: hsl(217, 12%, 63%);
 	white-space: pre;
 }
 .decstyle{
-	text-align: center;
+
 }
 
 @media only screen and (min-width: 375px){
