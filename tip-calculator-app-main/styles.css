@@ -1,0 +1,22 @@
+body {
+background-color: hsl(185, 41%, 84%);
+}
+
+.image{
+margin: auto;
+position:relative;
+
+}
+.box{
+margin: auto;
+position:relative;
+height: 335px;
+width: 350px;
+top: 100px;
+border-radius: 15px;
+padding: 45px;
+background-color: hsl(0, 0%, 100%);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
