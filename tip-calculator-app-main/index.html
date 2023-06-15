@@ -1,41 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link href='https://fonts.googleapis.com/css?family=Space+Mono' rel='stylesheet'>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" type="text/css" href="styles.css">
   <title>Frontend Mentor | Tip calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+ 
 </head>
 <body>
-
-  Bill
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-  
+  <div class="image">
+  <img class="logo" src="images/logo.svg" alt="Product"/>
+  </div>
+  <div class="box">
+    <div class="lables">
+      <p class="bill">Bill</p>
+      <p class="tip">Select Tip %</p>
+      <p class="people">Number of People</p>
+    </div>
+    <div class="inputs">
+      <input class="amount"> </input>
+      <input class="number"> </input>
+    </div>
+    <div class="percentage">
+      <button class="5">5%</button>
+      <button class="10">10%</button>
+      <button class="15">15%</button>
+      <button class="25">25%</button>
+      <button class="50">50%</button>
+      <button class="Custom">Custom</button>
+    </div>
+    <div class="resultbox">
+      <p class="tipcalc">Tip Amount</p>
+      <p class="perperson">/ person</p>
+      <p class="total">Total</p>
+      <p class="perperson">/ person</p>
+      <button class="reset">Reset</button>
+    </div>
+  </div>
+ 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
