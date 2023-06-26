@@ -5,7 +5,7 @@ background-color: hsl(216, 12%, 8%);
 .box{
 margin: auto;
 position:relative;
-height: 335px;
+height: 305px;
 width: 350px;
 border-radius: 15px;
 padding: 45px;
@@ -31,112 +31,25 @@ font-weight: 400;
 color: hsl(217, 12%, 63%);
 }
 
-.rate1{
+.rate{
 text-align: center;
-height: 15px;
-width: 15px;
-padding: 20px;
-border-radius: 30px;
+padding: 15px 20px;
+border-radius: 60px;
+border: none;
+bottom: 95px;
+margin: 9px;
 color: hsl(216, 12%, 54%);
 background-color: hsl(213, 19%, 20%);
-margin: auto;
-position:absolute;
-left: 30px;
-bottom: 95px;
 font-family: 'Overpass';
 font-weight: 700;
 cursor:pointer;
 transition: .1s background ease;
 }
-.rate1:hover{
+.rate:hover{
 color: hsl(0, 0%, 100%);
-background: hsl(25, 97%, 53%);
+background: hsl(216, 12%, 54%);
 }
-
-.rate2{
-text-align: center;
-height: 15px;
-width: 15px;
-padding: 20px;
-border-radius: 30px;
-color: hsl(216, 12%, 54%);
-background-color: hsl(213, 19%, 20%);
-margin: auto;
-position:absolute;
-left: 110px;
-bottom: 95px;
-font-family: 'Overpass';
-font-weight: 700;
-cursor:pointer;
-transition: .1s background ease;
-}
-.rate2:hover{
-color: hsl(0, 0%, 100%);
-background: hsl(25, 97%, 53%);
-}
-
-.rate3{
-text-align: center;
-height: 15px;
-width: 15px;
-padding: 20px;
-border-radius: 30px;
-color: hsl(216, 12%, 54%);
-background-color: hsl(213, 19%, 20%);
-margin: auto;
-position:absolute;
-left: 192px;
-bottom: 95px;
-font-family: 'Overpass';
-font-weight: 700;
-cursor:pointer;
-transition: .1s background ease;
-}
-.rate3:hover{
-color: hsl(0, 0%, 100%);
-background: hsl(25, 97%, 53%);
-}
-
-.rate4{
-text-align: center;
-height: 15px;
-width: 15px;
-padding: 20px;
-border-radius: 30px;
-color: hsl(216, 12%, 54%);
-background-color: hsl(213, 19%, 20%);
-margin: auto;
-position:absolute;
-left: 276px;
-bottom: 95px;
-font-family: 'Overpass';
-font-weight: 700;
-cursor:pointer;
-transition: .1s background ease;
-}
-.rate4:hover{
-color: hsl(0, 0%, 100%);
-background: hsl(25, 97%, 53%);
-}
-
-.rate5{
-text-align: center;
-height: 15px;
-width: 15px;
-padding: 20px;
-border-radius: 30px;
-color: hsl(216, 12%, 54%);
-background-color: hsl(213, 19%, 20%);
-margin: auto;
-position:absolute;
-left: 357px;
-bottom: 95px;
-font-family: 'Overpass';
-font-weight: 700;
-cursor:pointer;
-transition: .1s background ease;
-}
-.rate5:hover{
+.active{
 color: hsl(0, 0%, 100%);
 background: hsl(25, 97%, 53%);
 }
