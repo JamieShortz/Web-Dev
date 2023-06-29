@@ -4,18 +4,27 @@ background-color: hsl(185, 41%, 84%);
 
 .image{
 margin: auto;
-position:relative;
-
+position:absolute;
+left: 880px;
+top: 135px;
 }
+
 .box{
 margin: auto;
 position:relative;
 height: 335px;
-width: 350px;
-top: 100px;
+width: 850px;
+top: 250px;
 border-radius: 15px;
-padding: 45px;
+padding: 70px;
 background-color: hsl(0, 0%, 100%);
+}
+
+.resultbox{
+position: absolute;
+right: 20px;
+border-radius: 15px;
+background-color: hsl(183, 100%, 15%);
 }
 
 .attribution { font-size: 11px; text-align: center; }
