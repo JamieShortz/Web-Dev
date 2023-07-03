@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL:(https://github.com/JamieShortz/Web-Dev/tree/main/nft-preview-card-component-main)
+- Solution URL:(https://www.frontendmentor.io/solutions/nft-preview-card-component-Gress2McKo))
 - Live Site URL:(https://jamieshortz.github.io/Web-Dev/nft-preview-card-component-main/index.html)
 
 ### Built with
