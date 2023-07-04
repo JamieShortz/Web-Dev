@@ -7,6 +7,16 @@ body {
  width: 37%;
 }
 
+.box{
+margin: auto;
+position:relative;
+height: 335px;
+width: 850px;
+top: 250px;
+border-radius: 15px;
+padding: 70px;
+}
+
 .image{
  float: left;
  display: inline-block;
@@ -19,7 +29,7 @@ body {
  background-color: hsl(0, 0%, 100%);
 }
 
-#type{
+.type{
  font-family: 'Montserrat';
  font-weight: 500;
  font-size: 14px;
@@ -27,7 +37,7 @@ body {
  margin-left: 20px;
  margin-bottom: 10px;
 }
-#product{
+.product{
  font-family: 'Fraunces';
  font-weight: 700;
  color: hsl(212, 21%, 14%);
@@ -40,7 +50,7 @@ body {
  color: hsl(228, 12%, 48%);
  margin-left: 20px;
 }
-#discount{
+.discount{
  display: inline-block;
  font-family: 'Fraunces';
  font-weight: 900;
@@ -50,7 +60,7 @@ body {
  padding-right: 20px;
 
 }
-#standard{
+.standard{
 
  display: inline-block;
  font-family: 'Montserrat';
@@ -59,12 +69,12 @@ body {
 
  margin-left: 90px;
 }
-#icon{
+.icon{
  margin-top: 15px;
  margin-bottom: 5px;
  margin-left: 10px;
 }
-#add{
+.add{
  font-family: 'Montserrat';
  font-weight: 700;
  margin-top: 14px;
@@ -86,7 +96,7 @@ body {
  margin: auto;
  width: 90%;
 }
-#button{
+.button{
   border:0;
   background:hsl(158, 36%, 37%);
   color:white;
@@ -98,11 +108,15 @@ body {
   
 
 }
- #button:hover{
+ .button:hover{
     background:hsl(158, 36%, 17%);
   }
 
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+.attribution{
+  position:relative;
+  top: 20px;
+}
 
