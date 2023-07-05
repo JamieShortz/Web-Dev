@@ -2,11 +2,6 @@ body {
   background-color: hsl(30, 38%, 92%);
 }
 
-.pagewrap{
- margin: auto;
- width: 37%;
-}
-
 .box{
 margin: auto;
 position:relative;
@@ -18,13 +13,15 @@ padding: 70px;
 }
 
 .image{
- float: left;
- display: inline-block;
+margin: auto;
+position:absolute;
+ 
  border-radius:10px 0px 0px 10px;
 }
 .rightside{
+margin: auto;
+position:absolute;
 
- display: inline-block;
  border-radius:0px 10px 10px 0px;
  background-color: hsl(0, 0%, 100%);
 }
@@ -117,6 +114,6 @@ padding: 70px;
 .attribution a { color: hsl(228, 45%, 44%); }
 .attribution{
   position:relative;
-  top: 20px;
+  top: 310px;
 }
 
