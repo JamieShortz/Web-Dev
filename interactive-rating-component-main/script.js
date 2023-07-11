@@ -9,3 +9,10 @@ var scale = document.getElementById("ratings");
     this.className += " active";
     });
   }
+
+  ratings.forEach((scale) => {
+    scale.addEventListener("click", () => {
+      console.log(scale.innerHTML)
+      //rating.innerHTML = scale.innerHTML
+    })
+  })
