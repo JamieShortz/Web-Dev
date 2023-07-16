@@ -7,47 +7,55 @@ margin: auto;
 position:relative;
 height: 335px;
 width: 850px;
-top: 250px;
+top: 150px;
 border-radius: 15px;
 padding: 70px;
 }
 
 .image{
-margin: auto;
-position:absolute;
- 
+ margin: auto;
+ position:absolute;
+ left: 95px;
  border-radius:10px 0px 0px 10px;
 }
 .rightside{
-margin: auto;
-position:absolute;
-
+ margin: auto;
+ position:absolute;
+ right: 200px;
  border-radius:0px 10px 10px 0px;
  background-color: hsl(0, 0%, 100%);
+ padding-top: 50px;
+ padding-right: 80px;
+ padding-bottom: 400px;
+ padding-left: 220px;
 }
 
 .type{
+ margin: auto;
+ position:absolute;
  font-family: 'Montserrat';
  font-weight: 500;
  font-size: 14px;
  color: hsl(228, 12%, 48%);
- margin-left: 20px;
- margin-bottom: 10px;
 }
 .product{
+ margin: auto;
+ position:absolute;
  font-family: 'Fraunces';
  font-weight: 700;
  color: hsl(212, 21%, 14%);
- margin-left: 20px;
 }
 .description{
+ margin: auto;
+ position:absolute;
  font-family: 'Montserrat';
  font-weight: 500;
  font-size: 14px;
  color: hsl(228, 12%, 48%);
- margin-left: 20px;
 }
 .discount{
+ margin: auto;
+ position:absolute;
  display: inline-block;
  font-family: 'Fraunces';
  font-weight: 900;
@@ -58,26 +66,22 @@ position:absolute;
 
 }
 .standard{
-
+ margin: auto;
+ position:absolute;
  display: inline-block;
  font-family: 'Montserrat';
  font-weight: 500;
  color: hsl(228, 12%, 48%);
-
- margin-left: 90px;
 }
 .icon{
- margin-top: 15px;
- margin-bottom: 5px;
- margin-left: 10px;
+ margin: auto;
+ position:absolute;
 }
 .add{
+ margin: auto;
+ position:absolute;
  font-family: 'Montserrat';
  font-weight: 700;
- margin-top: 14px;
- padding-left: 12px;
- margin-right: 50px;
- float: right;
 }
 
 .wordstyle::after{
@@ -91,17 +95,18 @@ position:absolute;
 }
 .price{
  margin: auto;
+ position:absolute;
  width: 90%;
 }
 .button{
+  margin: auto;
+  position:absolute;
   border:0;
   background:hsl(158, 36%, 37%);
   color:white;
   cursor:pointer;
   transition: .3s background ease;
   border-radius:10px;
-  padding-left: 10px;
-  margin-right: 70px;
   
 
 }
@@ -114,6 +119,6 @@ position:absolute;
 .attribution a { color: hsl(228, 45%, 44%); }
 .attribution{
   position:relative;
-  top: 310px;
+  top: 210px;
 }
 
