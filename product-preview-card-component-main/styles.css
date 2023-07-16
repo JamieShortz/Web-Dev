@@ -34,9 +34,12 @@ padding: 70px;
  margin: auto;
  position:absolute;
  font-family: 'Montserrat';
- font-weight: 500;
+ font-weight: 700;
  font-size: 14px;
+ letter-spacing: 3px;
  color: hsl(228, 12%, 48%);
+ top: 30px;
+ right: 175px;
 }
 .product{
  margin: auto;
@@ -44,6 +47,8 @@ padding: 70px;
  font-family: 'Fraunces';
  font-weight: 700;
  color: hsl(212, 21%, 14%);
+ top: 60px;
+ right: 120px;
 }
 .description{
  margin: auto;
@@ -52,6 +57,8 @@ padding: 70px;
  font-weight: 500;
  font-size: 14px;
  color: hsl(228, 12%, 48%);
+ top: 150px;
+ right: 45px;
 }
 .discount{
  margin: auto;
@@ -61,8 +68,8 @@ padding: 70px;
  font-weight: 900;
  font-size: 30px;
  color:hsl(158, 36%, 37%);
- 
- padding-right: 20px;
+ top: 205px;
+ right: 345px;
 
 }
 .standard{
