@@ -11,6 +11,15 @@ border-radius: 15px;
 padding: 45px;
 background-color: hsl(213, 19%, 15%);
 }
+.box2{
+margin: auto;
+position:relative;
+height: 305px;
+width: 350px;
+border-radius: 15px;
+padding: 45px;
+background-color: hsl(213, 19%, 15%);
+}
 
 .star{
 padding: 15px;
@@ -54,7 +63,7 @@ color: hsl(0, 0%, 100%);
 background: hsl(25, 97%, 53%);
 }
 
-#ratenow{
+.ratenow{
 margin: auto;
 position:absolute;
 bottom: 25px;
@@ -71,9 +80,12 @@ cursor:pointer;
 transition: .1s background ease;
 }
 
-#ratenow:hover{
+.ratenow:hover{
 color: hsl(25, 97%, 53%);
 background: hsl(0, 0%, 100%);
+}
+.hidden{
+ display: none;
 }
 
 .thankpic{
