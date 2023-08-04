@@ -27,5 +27,19 @@ border-radius: 15px;
 background-color: hsl(183, 100%, 15%);
 }
 
+.labels{
+margin: auto;
+position:relative;
+bottom: 50px;
+right: 30px;
+font-family: 'Space Mono';
+font-weight: 700;
+color: hsl(186, 14%, 43%);
+}
+.tip{
+margin-top: 50px;
+}
+
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }

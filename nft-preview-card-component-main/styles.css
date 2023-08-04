@@ -125,6 +125,7 @@ color: hsl(178, 100%, 50%);
   overflow-x: hidden;
  }
 }
+
 @media only screen and (min-width: 1440px){
  .pagewrap{
   margin: auto;
