@@ -5,7 +5,7 @@ background-color: hsl(185, 41%, 84%);
 .image{
 margin: auto;
 position:absolute;
-left: 880px;
+left: 900px;
 top: 135px;
 }
 
@@ -22,8 +22,11 @@ background-color: hsl(0, 0%, 100%);
 
 .resultbox{
 position: absolute;
-right: 20px;
+right: 25px;
+width: 180px;
+top: 25px;
 border-radius: 15px;
+padding: 125px;
 background-color: hsl(183, 100%, 15%);
 }
 
@@ -36,10 +39,49 @@ font-family: 'Space Mono';
 font-weight: 700;
 color: hsl(186, 14%, 43%);
 }
+
+.amount{
+background-color: hsl(189, 41%, 97%);
+}
+.number{
+background-color: hsl(189, 41%, 97%);
+}
+
+button{
+padding: 12px;
+widht: 10px;
+color: hsl(0, 0%, 100%);
+background-color: hsl(183, 100%, 15%);
+}
+
+.reset{
+color: hsl(189, 41%, 97%);
+background-color: hsl(186, 14%, 43%);
+}
+
 .tip{
 margin-top: 50px;
 }
 
+@media only screen and (min-width: 375px){
+ .pagewrap{
+  margin: auto;
+  position:relative;
+  top: 50px;
+  width: 375px;
+  height: 650px;
+  overflow-x: hidden;
+ }
+}
+
+@media only screen and (min-width: 1440px){
+ .pagewrap{
+  margin: auto;
+  position:relative;
+  top: 150px;
+  width: 1440px;
+ }
+}
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
