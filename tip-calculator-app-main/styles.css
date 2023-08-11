@@ -15,16 +15,18 @@ position:relative;
 height: 335px;
 width: 850px;
 top: 250px;
-border-radius: 15px;
+border-radius: 20px;
 padding: 70px;
 background-color: hsl(0, 0%, 100%);
 }
 
 .resultbox{
+margin: auto;
 position: absolute;
 right: 25px;
 width: 180px;
-top: 15px;
+height: 175px;
+top: 25px;
 border-radius: 15px;
 padding: 125px;
 background-color: hsl(183, 100%, 15%);
@@ -109,7 +111,7 @@ border-radius: 3px;
 .reset{
 Color: hsl(189, 41%, 97%);
 padding: 12px;
-width: 80px;
+width: 350px;
 background-color: hsl(186, 14%, 43%);
 text-align: center;
 border: none;
