@@ -24,7 +24,7 @@ background-color: hsl(0, 0%, 100%);
 position: absolute;
 right: 25px;
 width: 180px;
-top: 25px;
+top: 15px;
 border-radius: 15px;
 padding: 125px;
 background-color: hsl(183, 100%, 15%);
@@ -42,21 +42,78 @@ color: hsl(186, 14%, 43%);
 
 .amount{
 background-color: hsl(189, 41%, 97%);
+border: none;
+border-radius: 3px;
 }
 .number{
 background-color: hsl(189, 41%, 97%);
+border: none;
+border-radius: 3px;
 }
 
-button{
-padding: 12px;
-widht: 10px;
+.five{
 color: hsl(0, 0%, 100%);
+padding: 12px;
+width: 60px;
 background-color: hsl(183, 100%, 15%);
+text-align: center;
+border: none;
+border-radius: 3px;
+}
+.ten{
+color: hsl(0, 0%, 100%);
+padding: 12px;
+width: 60px;
+background-color: hsl(183, 100%, 15%);
+text-align: center;
+border: none;
+border-radius: 3px;
+}
+.fifthteen{
+color: hsl(0, 0%, 100%);
+padding: 12px;
+width: 60px;
+background-color: hsl(183, 100%, 15%);
+text-align: center;
+border: none;
+border-radius: 3px;
+}
+.twentyfive{
+color: hsl(0, 0%, 100%);
+padding: 12px;
+width: 60px;
+background-color: hsl(183, 100%, 15%);
+text-align: center;
+border: none;
+border-radius: 3px;
+}
+.fifty{
+color: hsl(0, 0%, 100%);
+padding: 12px;
+width: 60px;
+background-color: hsl(183, 100%, 15%);
+text-align: center;
+border: none;
+border-radius: 3px;
+}
+.Custom{
+color: hsl(186, 14%, 43%);
+padding: 12px;
+width: 80px;
+background-color: hsl(189, 41%, 97%);
+text-align: center;
+border: none;
+border-radius: 3px;
 }
 
 .reset{
-color: hsl(189, 41%, 97%);
+Color: hsl(189, 41%, 97%);
+padding: 12px;
+width: 80px;
 background-color: hsl(186, 14%, 43%);
+text-align: center;
+border: none;
+border-radius: 3px;
 }
 
 .tip{
