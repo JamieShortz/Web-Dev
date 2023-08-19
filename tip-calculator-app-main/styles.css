@@ -42,15 +42,38 @@ font-weight: 700;
 color: hsl(186, 14%, 43%);
 }
 
+.tip{
+margin: auto;
+position:relative;
+top: 25px;
+}
+.people{
+margin: auto;
+position:relative;
+top: 230px;
+}
+
 .amount{
+margin: auto;
+position:relative;
+bottom: 145px;
+right: 30px;
 background-color: hsl(189, 41%, 97%);
 border: none;
 border-radius: 3px;
+padding: 10px;
+width: 400px;
 }
 .number{
+margin: auto;
+position:relative;
+top: 185px;
+right: 455px;
 background-color: hsl(189, 41%, 97%);
 border: none;
 border-radius: 3px;
+padding: 10px;
+width: 400px;
 }
 
 .five{
