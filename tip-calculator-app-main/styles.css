@@ -77,76 +77,97 @@ width: 400px;
 }
 
 .five{
+margin: auto;
+position:relative;
 color: hsl(0, 0%, 100%);
-padding: 12px;
-width: 60px;
+padding: 5px;
+width: 120px;
+bottom: 80px;
+right: 30px;
 background-color: hsl(183, 100%, 15%);
 text-align: center;
 font-family: 'Space Mono';
 font-weight: 700;
 font-size: 25px;
 border: none;
-border-radius: 3px;
+border-radius: 5px;
 }
 .ten{
+margin: auto;
+position:relative;
 color: hsl(0, 0%, 100%);
-padding: 12px;
-width: 60px;
+padding: 5px;
+width: 120px;
+bottom: 80px;
+right: 20px;
 background-color: hsl(183, 100%, 15%);
 text-align: center;
 font-family: 'Space Mono';
 font-weight: 700;
 font-size: 25px;
 border: none;
-border-radius: 3px;
+border-radius: 5px;
 }
 .fifthteen{
+margin: auto;
+position:relative;
 color: hsl(0, 0%, 100%);
-padding: 12px;
-width: 60px;
+padding: 5px;
+width: 120px;
+bottom: 80px;
+right: 10px;
 background-color: hsl(183, 100%, 15%);
 text-align: center;
 font-family: 'Space Mono';
 font-weight: 700;
 font-size: 25px;
 border: none;
-border-radius: 3px;
+border-radius: 5px;
 }
 .twentyfive{
+margin: auto;
+position:relative;
 color: hsl(0, 0%, 100%);
-padding: 12px;
-width: 60px;
+padding: 5px;
+width: 120px;
+right: 402px;
 background-color: hsl(183, 100%, 15%);
 text-align: center;
 font-family: 'Space Mono';
 font-weight: 700;
 font-size: 25px;
 border: none;
-border-radius: 3px;
+border-radius: 5px;
 }
 .fifty{
+margin: auto;
+position:relative;
 color: hsl(0, 0%, 100%);
-padding: 12px;
-width: 60px;
+padding: 5px;
+width: 120px;
+right: 392px;
 background-color: hsl(183, 100%, 15%);
 text-align: center;
 font-family: 'Space Mono';
 font-weight: 700;
 font-size: 25px;
 border: none;
-border-radius: 3px;
+border-radius: 5px;
 }
 .Custom{
+margin: auto;
+position:relative;
 color: hsl(186, 14%, 43%);
-padding: 12px;
-width: 130px;
+padding: 5px;
+width: 120px;
+right: 382px;
 background-color: hsl(189, 41%, 97%);
 text-align: center;
 font-family: 'Space Mono';
 font-weight: 700;
 font-size: 25px;
 border: none;
-border-radius: 3px;
+border-radius: 5px;
 }
 
 .reset{
@@ -155,7 +176,7 @@ position:relative;
 Color: hsl(183, 100%, 15%);
 padding: 12px;
 width: 350px;
-top: 70px;
+bottom: 30px;
 background-color: hsl(172, 67%, 45%);
 text-align: center;
 font-family: 'Space Mono';
@@ -163,8 +184,69 @@ font-weight: 700;
 font-size: 18px;
 letter-spacing: 0.5px;
 border: none;
-border-radius: 3px;
+border-radius: 5px;
 right: 85px;
+}
+
+.tipcalc{
+margin: auto;
+position:relative;
+font-family: 'Space Mono';
+font-weight: 700;
+color: hsl(189, 41%, 97%);
+bottom: 80px;
+right: 90px;
+}
+
+.total{
+margin: auto;
+position:relative;
+font-family: 'Space Mono';
+font-weight: 700;
+color: hsl(189, 41%, 97%);
+bottom: 20px;
+right: 90px;
+}
+
+.perperson{
+margin: auto;
+position:relative;
+font-family: 'Space Mono';
+font-weight: 700;
+color: hsl(184, 14%, 56%);
+bottom: 80px;
+right: 90px;
+}
+.perperson2{
+margin: auto;
+position:relative;
+font-family: 'Space Mono';
+font-weight: 700;
+color: hsl(184, 14%, 56%);
+bottom: 20px;
+right: 90px;
+}
+
+.tipCount{
+margin: auto;
+position:relative;
+font-family: 'Space Mono';
+font-weight: 700;
+font-size: 50px;
+color: hsl(172, 67%, 45%);
+bottom: 190px;
+left: 110px;
+}
+
+.totalCount{
+margin: auto;
+position:relative;
+font-family: 'Space Mono';
+font-weight: 700;
+font-size: 50px;
+color: hsl(172, 67%, 45%);
+bottom: 155px;
+left: 110px;
 }
 
 .tip{
