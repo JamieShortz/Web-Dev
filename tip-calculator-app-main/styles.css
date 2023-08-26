@@ -9,6 +9,19 @@ left: 430px;
 bottom: 550px;
 }
 
+.dollar{
+margin: auto;
+position:absolute;
+bottom: 387px;
+left: 60px;
+}
+.person{
+margin: auto;
+position:absolute;
+bottom: 57px;
+left: 55px;
+}
+
 .box{
 margin: auto;
 position:relative;
