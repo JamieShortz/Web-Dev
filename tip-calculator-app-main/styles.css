@@ -2,11 +2,11 @@ body {
 background-color: hsl(185, 41%, 84%);
 }
 
-.image{
+.logo{
 margin: auto;
 position:absolute;
-left: 900px;
-top: 135px;
+left: 430px;
+bottom: 550px;
 }
 
 .box{
