@@ -104,6 +104,17 @@ font-weight: 700;
 font-size: 25px;
 border: none;
 border-radius: 5px;
+cursor:pointer;
+transition: .1s background ease;
+}
+
+.five:hover{
+color: hsl(183, 100%, 15%);
+background-color: hsl(185, 41%, 84%);
+}
+.five:focus{
+color: hsl(183, 100%, 15%);
+background-color: hsl(172, 67%, 45%)
 }
 .ten{
 margin: auto;
@@ -120,6 +131,16 @@ font-weight: 700;
 font-size: 25px;
 border: none;
 border-radius: 5px;
+cursor:pointer;
+transition: .1s background ease;
+}
+.ten:hover{
+color: hsl(183, 100%, 15%);
+background-color: hsl(185, 41%, 84%);
+}
+.ten:focus{
+color: hsl(183, 100%, 15%);
+background-color: hsl(172, 67%, 45%)
 }
 .fifthteen{
 margin: auto;
@@ -136,6 +157,16 @@ font-weight: 700;
 font-size: 25px;
 border: none;
 border-radius: 5px;
+cursor:pointer;
+transition: .1s background ease;
+}
+.fifthteen:hover{
+color: hsl(183, 100%, 15%);
+background-color: hsl(185, 41%, 84%);
+}
+.fifthteen:focus{
+color: hsl(183, 100%, 15%);
+background-color: hsl(172, 67%, 45%)
 }
 .twentyfive{
 margin: auto;
@@ -151,6 +182,16 @@ font-weight: 700;
 font-size: 25px;
 border: none;
 border-radius: 5px;
+cursor:pointer;
+transition: .1s background ease;
+}
+.twentyfive:hover{
+color: hsl(183, 100%, 15%);
+background-color: hsl(185, 41%, 84%);
+}
+.twentyfive:focus{
+color: hsl(183, 100%, 15%);
+background-color: hsl(172, 67%, 45%)
 }
 .fifty{
 margin: auto;
@@ -166,6 +207,16 @@ font-weight: 700;
 font-size: 25px;
 border: none;
 border-radius: 5px;
+cursor:pointer;
+transition: .1s background ease;
+}
+.fifty:hover{
+color: hsl(183, 100%, 15%);
+background-color: hsl(185, 41%, 84%);
+}
+.fifty:focus{
+color: hsl(183, 100%, 15%);
+background-color: hsl(172, 67%, 45%)
 }
 .Custom{
 margin: auto;
@@ -200,6 +251,8 @@ border: none;
 border-radius: 5px;
 right: 85px;
 opacity: 0.2;
+cursor:pointer;
+transition: .1s background ease;
 }
 
 .tipcalc{
