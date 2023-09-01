@@ -12,13 +12,13 @@ bottom: 550px;
 .dollar{
 margin: auto;
 position:absolute;
-bottom: 387px;
+bottom: 379px;
 left: 60px;
 }
 .person{
 margin: auto;
 position:absolute;
-bottom: 57px;
+bottom: 50px;
 left: 55px;
 }
 
@@ -112,10 +112,6 @@ transition: .1s background ease;
 color: hsl(183, 100%, 15%);
 background-color: hsl(185, 41%, 84%);
 }
-.five:focus{
-color: hsl(183, 100%, 15%);
-background-color: hsl(172, 67%, 45%)
-}
 .ten{
 margin: auto;
 position:relative;
@@ -137,10 +133,6 @@ transition: .1s background ease;
 .ten:hover{
 color: hsl(183, 100%, 15%);
 background-color: hsl(185, 41%, 84%);
-}
-.ten:focus{
-color: hsl(183, 100%, 15%);
-background-color: hsl(172, 67%, 45%)
 }
 .fifthteen{
 margin: auto;
@@ -164,10 +156,7 @@ transition: .1s background ease;
 color: hsl(183, 100%, 15%);
 background-color: hsl(185, 41%, 84%);
 }
-.fifthteen:focus{
-color: hsl(183, 100%, 15%);
-background-color: hsl(172, 67%, 45%)
-}
+
 .twentyfive{
 margin: auto;
 position:relative;
@@ -189,10 +178,7 @@ transition: .1s background ease;
 color: hsl(183, 100%, 15%);
 background-color: hsl(185, 41%, 84%);
 }
-.twentyfive:focus{
-color: hsl(183, 100%, 15%);
-background-color: hsl(172, 67%, 45%)
-}
+
 .fifty{
 margin: auto;
 position:relative;
@@ -214,10 +200,7 @@ transition: .1s background ease;
 color: hsl(183, 100%, 15%);
 background-color: hsl(185, 41%, 84%);
 }
-.fifty:focus{
-color: hsl(183, 100%, 15%);
-background-color: hsl(172, 67%, 45%)
-}
+
 .Custom{
 margin: auto;
 position:relative;
@@ -234,6 +217,10 @@ border: none;
 border-radius: 5px;
 }
 
+.active{
+color: hsl(183, 100%, 15%);
+background-color: hsl(172, 67%, 45%)
+}
 .reset{
 margin: auto;
 position:relative;
@@ -318,6 +305,14 @@ left: 110px;
 
 .tip{
 margin-top: 50px;
+}
+
+input{
+text-align: right;
+font-family: 'Space Mono';
+font-weight: 700;
+font-size: 20px;
+opacity: 60%;
 }
 
 @media only screen and (min-width: 375px){
