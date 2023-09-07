@@ -1,0 +1,35 @@
+body {
+background-color: hsl(0, 100%, 74%);
+}
+
+.bg{
+margin: auto;
+position:relative;
+top: 3.5rem;
+left: 15rem;
+background-attachment: fixed;
+}
+
+.box{
+margin: auto;
+position:relative;
+height: 20rem;
+width: 18rem;
+bottom: 40rem;
+left: 20rem;
+border-radius: 0.5rem;
+padding: 1.2rem;
+background-color: hsl(0, 0%, 100%);
+}
+
+.freeTrial{
+margin: auto;
+position:relative;
+height: 0.5rem;
+width: 18rem;
+bottom: 41rem;
+left: 5rem;
+border-radius: 0.5rem;
+padding: 1.2rem;
+background-color: hsl(0, 0%, 100%);
+}
