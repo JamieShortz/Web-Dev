@@ -79,16 +79,23 @@ padding: 70px;
  font-family: 'Montserrat';
  font-weight: 500;
  color: hsl(228, 12%, 48%);
+ top: 215px;
+ right: 265px;
 }
 .icon{
  margin: auto;
  position:absolute;
+ left: 55px;
+ bottom: 12px;
 }
 .add{
  margin: auto;
  position:absolute;
  font-family: 'Montserrat';
  font-weight: 700;
+ font-size: 12px;
+ bottom: 12px;
+ left: 80px;
 }
 
 .wordstyle::after{
@@ -114,7 +121,10 @@ padding: 70px;
   cursor:pointer;
   transition: .3s background ease;
   border-radius:10px;
-  
+  left: 30px;
+  top: 320px;
+  padding: 20px;
+  width: 200px;
 
 }
  .button:hover{

@@ -17,7 +17,7 @@ left: 15rem;
 background-attachment: fixed;
 }
 
-.box{
+#box{
 margin-top: 7rem;
 margin: auto;
 position:relative;
@@ -30,7 +30,7 @@ padding: 1.2rem;
 background-color: hsl(0, 0%, 100%);
 }
 
-.first{
+#first{
 margin: auto;
 position:relative;
 padding: 1rem;
@@ -46,7 +46,7 @@ font-family: 'Poppins';
 font-weight: 700;
 }
 
-.last{
+#last{
 margin: auto;
 position:relative;
 padding: 1rem;
@@ -61,7 +61,7 @@ font-family: 'Poppins';
 font-weight: 700;
 }
 
-.email{
+#email{
 margin: auto;
 position:relative;
 padding: 1rem;
@@ -76,7 +76,7 @@ font-family: 'Poppins';
 font-weight: 700;
 }
 
-.passWord{
+#passWord{
 margin: auto;
 position:relative;
 padding: 1rem;
