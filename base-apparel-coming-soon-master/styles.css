@@ -1,0 +1,21 @@
+.leftBox{
+margin: auto;
+position:relative;
+height: 30rem;
+}
+
+.image{
+marin: auto;
+position: relative;
+left: 80rem;
+bottom: 25rem;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.attribution{
+marin: auto;
+position: absolute;
+
+}
