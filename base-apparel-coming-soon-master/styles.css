@@ -8,7 +8,11 @@ height: 30rem;
 marin: auto;
 position: relative;
 left: 80rem;
-bottom: 25rem;
+bottom: 30rem;
+}
+
+.hero{
+width: 850px;
 }
 
 .attribution { font-size: 11px; text-align: center; }
