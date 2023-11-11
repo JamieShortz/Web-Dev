@@ -2,17 +2,50 @@
 margin: auto;
 position:relative;
 height: 30rem;
+right: 1rem;
+bottom: 12rem;
+}
+
+.logo{
+margin: auto;
+position:relative;
+top: 15rem;
+}
+
+.leftBgDesk{
+width: 75rem;
+right: 10rem;
 }
 
 .image{
 marin: auto;
 position: relative;
-left: 80rem;
-bottom: 30rem;
+left: 73.8rem;
+bottom: 31rem;
 }
 
 .hero{
-width: 850px;
+width: 715px;
+}
+
+@media only screen and (min-width: 375px){
+ .pagewrap{
+  margin: auto;
+  position:relative;
+  top: 50px;
+  width: 375px;
+  height: 650px;
+  overflow: hidden;
+ }
+}
+
+@media only screen and (min-width: 1440px){
+ .page{
+  margin: auto;
+  position:relative;
+  height: 100%;
+  overflow: hidden;
+ }
 }
 
 .attribution { font-size: 11px; text-align: center; }
@@ -21,5 +54,5 @@ width: 850px;
 .attribution{
 marin: auto;
 position: absolute;
-
+bottom: 35rem;
 }

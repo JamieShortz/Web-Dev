@@ -1,0 +1,27 @@
+body {
+background-color: hsl(257, 40%, 49%);
+}
+
+
+@media only screen and (min-width: 375px){
+ .pageweap{
+  margin: auto;
+  position:relative;
+  top: 50px;
+  width: 375px;
+  height: 650px;
+  overflow: hidden;
+ }
+}
+
+@media only screen and (min-width: 1440px){
+ .page{
+  margin: auto;
+  position:relative;
+  height: 100%;
+  overflow: hidden;
+ }
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
