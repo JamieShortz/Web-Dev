@@ -2,14 +2,15 @@
 margin: auto;
 position:relative;
 height: 30rem;
-right: 1rem;
-bottom: 12rem;
+right: 2rem;
+bottom: 11rem;
 }
 
 .logo{
 margin: auto;
 position:relative;
 top: 15rem;
+left: 2rem;
 }
 
 .leftBgDesk{
@@ -20,12 +21,16 @@ right: 10rem;
 .image{
 marin: auto;
 position: relative;
-left: 73.8rem;
-bottom: 31rem;
+left: 74rem;
+bottom: 30rem;
 }
 
 .hero{
-width: 715px;
+width: 701px;
+}
+
+body {
+background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%);
 }
 
 @media only screen and (min-width: 375px){
