@@ -2,6 +2,63 @@ body {
 background-color: hsl(257, 40%, 49%);
 }
 
+.logo{
+margin: auto;
+position:absolute;
+top: 3rem;
+left: 4.5rem;
+}
+
+.mockUp{
+margin: auto;
+position:absolute;
+top: 12rem;
+left: 4.5rem;
+}
+
+.header{
+margin: auto;
+position:absolute;
+top: 16rem;
+left: 52rem;
+font-family: 'Poppins';
+font-weight: 600;
+color: hsl(0, 0%, 100%);
+}
+
+.body{
+margin: auto;
+position:absolute;
+top: 23.5rem;
+left: 52rem;
+font-family: 'Open Sans';
+font-weight: 400;
+color: hsl(0, 0%, 100%);
+}
+
+.decstyle::after{
+	content: "\a";
+	white-space: pre;
+}
+
+.register{
+margin: auto;
+position:absolute;
+padding: 0.8rem;
+width: 10rem;
+left: 52rem;
+top: 28.8rem;
+border-radius: 20px;
+border: none;
+color: hsl(257, 40%, 49%);
+cursor:pointer;
+transition: .1s background ease;
+}
+
+.register:hover{
+color: hsl(0, 0%, 100%);
+background: hsl(300, 69%, 71%);
+}
 
 @media only screen and (min-width: 375px){
  .pageweap{
