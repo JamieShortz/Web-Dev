@@ -1,0 +1,40 @@
+body{
+background: hsl(235, 18%, 26%);
+}
+
+.box{
+margin: auto;
+position:relative;
+width: 30rem;
+border-radius: 15px;
+padding: 25px;
+background-color: hsl(0, 0%, 100%);
+}
+
+@media only screen and (min-width: 375px){
+ .pageweap{
+  margin: auto;
+  position:relative;
+  top: 50px;
+  width: 375px;
+  height: 650px;
+  overflow: hidden;
+ }
+}
+
+@media only screen and (min-width: 1440px){
+ .page{
+  margin: auto;
+  position:relative;
+  height: 100%;
+  overflow: hidden;
+ }
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(0, 0%, 100%); }
+
+.attribution{
+marin: auto;
+position: relative;
+}
