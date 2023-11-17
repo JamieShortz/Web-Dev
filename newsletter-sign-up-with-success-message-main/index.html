@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="styles.css">
   
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 
@@ -16,24 +18,29 @@
 </head>
 <body>
 
-  <!-- Sign-up form start -->
+  <div class="page">
+<!-- Sign-up form start -->
+    <div class="box">
+      <p class="header">Stay updated!</p>
+      <p class="subHeader">Join 60,000+ product managers receiving monthly updates on:</p>
+      <p class="list1">Product discovery and building what matters</p>
+      <p class="list2">Measuring to ensure updates are a success</p>
+      <p class="list3">And much more!</p>
 
-  Stay updated!
+      <form class="inputs">
+        <p class="emailLabel">Email address</p>
+        <input id="email" type="email" placeholder="email@company.com"> </input>
+        <button class="subscribe" type="submit">Subscribe to monthly newsletter</button>
+      </form>
+      <img class="rightSide" src="assets/images/illustration-sign-up-desktop.svg" alt="illustration"/>
+    </div>
 
-  Join 60,000+ product managers receiving monthly updates on:
-
-  Product discovery and building what matters
-  Measuring to ensure updates are a success
-  And much more!
-
-  Email address
-  email@company.com
-
-  Subscribe to monthly newsletter
-
+  </div>
   <!-- Sign-up form end -->
 
-  <!-- Success message start -->
+  
+<!--
+  -- Success message start --
 
   Thanks for subscribing!
 
@@ -42,8 +49,8 @@
 
   Dismiss message
 
-  <!-- Success message end -->
-  
+  -- Success message end --
+-->
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
