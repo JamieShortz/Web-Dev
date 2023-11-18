@@ -5,10 +5,68 @@ background: hsl(235, 18%, 26%);
 .box{
 margin: auto;
 position:relative;
-width: 30rem;
+height: 36rem;
+width: 59.5rem;
 border-radius: 15px;
 padding: 25px;
 background-color: hsl(0, 0%, 100%);
+}
+
+.rightSide{
+margin: auto;
+position:relative;
+left: 35rem;
+bottom: 25rem;
+}
+
+.header{
+font-family: 'Roboto';
+color: hsl(234, 29%, 20%);
+font-weight: 700;
+font-size: 4rem;
+margin-left: 3rem;
+
+}
+
+.subHeader{
+font-family: 'Roboto';
+font-size: 18px;
+font-weight: 400;
+margin-left: 3rem;
+margin-top: -1rem;
+}
+
+.list1{
+font-family: 'Roboto';
+font-size: 18px;
+font-weight: 400;
+margin-left: 3rem;
+}
+
+.list2{
+font-family: 'Roboto';
+font-size: 18px;
+font-weight: 400;
+margin-left: 3rem;
+}
+
+.list3{
+font-family: 'Roboto';
+font-size: 18px;
+font-weight: 400;
+margin-left: 3rem;
+}
+
+.inputs{
+font-family: 'Roboto';
+font-size: 18px;
+font-weight: 400;
+margin-left: 3rem;
+}
+
+.decstyle::after{
+	content: "\a";
+	white-space: pre;
 }
 
 @media only screen and (min-width: 375px){
