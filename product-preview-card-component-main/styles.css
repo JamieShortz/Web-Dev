@@ -132,6 +132,31 @@ padding: 70px;
   }
 
 
+@media only screen and (min-width: 375px){
+ .pagewrap{
+  margin: auto;
+  position:relative;
+
+  width: 375px;
+  height: 650px;
+  overflow-x: hidden;
+ }
+}
+
+@media only screen and (min-width: 1440px){
+ .pagewrap{
+  margin: auto;
+  position:relative;
+  bottom: 40px;
+  width: 1450px;
+  height: 700px;
+  overflow-x: hidden;
+ }
+ .imageMobile{
+  opacity: 0;
+ }
+}
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 .attribution{
