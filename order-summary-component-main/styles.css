@@ -1,0 +1,30 @@
+.box{
+margin: auto;
+position: relative;
+width: 10rem;
+
+}
+
+
+@media only screen and (min-width: 375px){
+ .pagewrap{
+  margin: auto;
+  position:relative;
+  top: 50px;
+  width: 375px;
+  height: 650px;
+  overflow-x: hidden;
+ }
+}
+
+@media only screen and (min-width: 1440px){
+ .pagewrap{
+  margin: auto;
+  position:relative;
+  top: 150px;
+  width: 1440px;
+ }
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
