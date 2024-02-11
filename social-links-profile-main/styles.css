@@ -1,0 +1,47 @@
+body {
+background-color: hsl(0, 0%, 8%);
+}
+
+#box{
+margin: auto;
+position:relative;
+width: 20rem;
+border-radius: 5rem;
+padding: 5rem;
+background-color: hsl(0, 0%, 12%);
+}
+
+.name{
+font-family: 'Inter';
+color: hsl(0, 0%, 100%);
+}
+.location{
+font-family: 'Inter';
+color: hsl(75, 94%, 57%);
+}
+.tagLine{
+font-family: 'Inter';
+color: hsl(0, 0%, 100%);
+}
+
+.socialMedia{
+font-family: 'Inter';
+color: hsl(0, 0%, 100%);
+}
+
+.GitHub{
+background-color: hsl(0, 0%, 20%);
+
+}
+.frontendMentor{
+background-color: hsl(0, 0%, 20%);
+}
+.LinkedIn{
+background-color: hsl(0, 0%, 20%);
+}
+.Twitter{
+background-color: hsl(0, 0%, 20%);
+}
+.Instagram{
+background-color: hsl(0, 0%, 20%);
+}
