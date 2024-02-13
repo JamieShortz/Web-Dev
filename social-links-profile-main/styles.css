@@ -5,28 +5,44 @@ background-color: hsl(0, 0%, 8%);
 #box{
 margin: auto;
 position:relative;
-width: 20rem;
-border-radius: 5rem;
+width: 15rem;
+height: 30rem;
+border-radius: 0.8rem;
 padding: 5rem;
 background-color: hsl(0, 0%, 12%);
 }
 
+.image{
+margin: auto;
+position:absolute;
+}
+
 .name{
+margin: auto;
+position:absolute;
 font-family: 'Inter';
 color: hsl(0, 0%, 100%);
 }
 .location{
+margin: auto;
+position:absolute;
 font-family: 'Inter';
 color: hsl(75, 94%, 57%);
 }
 .tagLine{
+margin: auto;
+position:absolute;
 font-family: 'Inter';
 color: hsl(0, 0%, 100%);
 }
 
 .socialMedia{
+margin: auto;
+position:absolute;
 font-family: 'Inter';
 color: hsl(0, 0%, 100%);
+top: 20rem;
+width: 23rem;
 }
 
 .GitHub{
@@ -44,4 +60,24 @@ background-color: hsl(0, 0%, 20%);
 }
 .Instagram{
 background-color: hsl(0, 0%, 20%);
+}
+
+@media only screen and (min-width: 375px){
+ .pagewrap{
+  margin: auto;
+  position:relative;
+  top: 50px;
+  width: 375px;
+  height: 650px;
+  overflow-x: hidden;
+ }
+}
+
+@media only screen and (min-width: 1440px){
+ .pagewrap{
+  margin: auto;
+  position:relative;
+  top: 150px;
+  width: 1440px;
+ }
 }
