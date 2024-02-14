@@ -62,6 +62,8 @@ text-align: center;
 top: 17rem;
 width: 20rem;
 left: 2.5rem;
+cursor:pointer;
+transition: .1s background ease;
 }
 
 .GitHub{
@@ -69,25 +71,49 @@ background-color: hsl(0, 0%, 20%);
 padding: 0.9rem;
 border-radius: 0.5rem;
 }
+.GitHub:hover{
+color: hsl(0, 0%, 12%);
+background: hsl(75, 94%, 57%);
+}
+
 .frontendMentor{
 background-color: hsl(0, 0%, 20%);
 padding: 0.9rem;
 border-radius: 0.5rem;
 }
+.frontendMentor:hover{
+color: hsl(0, 0%, 12%);
+background: hsl(75, 94%, 57%);
+}
+
 .LinkedIn{
 background-color: hsl(0, 0%, 20%);
 padding: 0.9rem;
 border-radius: 0.5rem;
 }
+.LinkedIn:hover{
+color: hsl(0, 0%, 12%);
+background: hsl(75, 94%, 57%);
+}
+
 .Twitter{
 background-color: hsl(0, 0%, 20%);
 padding: 0.9rem;
 border-radius: 0.5rem;
 }
+.Twitter:hover{
+color: hsl(0, 0%, 12%);
+background: hsl(75, 94%, 57%);
+}
+
 .Instagram{
 background-color: hsl(0, 0%, 20%);
 padding: 0.9rem;
 border-radius: 0.5rem;
+}
+.Instagram:hover{
+color: hsl(0, 0%, 12%);
+background: hsl(75, 94%, 57%);
 }
 
 @media only screen and (min-width: 375px){
