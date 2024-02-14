@@ -15,6 +15,10 @@ background-color: hsl(0, 0%, 12%);
 .image{
 margin: auto;
 position:absolute;
+border-radius: 10rem;
+width: 6rem;
+bottom: 31rem;
+left: 9rem;
 }
 
 .name{
@@ -22,18 +26,30 @@ margin: auto;
 position:absolute;
 font-family: 'Inter';
 color: hsl(0, 0%, 100%);
+top: 10.5rem;
+left: 6rem;
+font-weight: 700;
+font-size: 25px;
 }
 .location{
 margin: auto;
 position:absolute;
 font-family: 'Inter';
 color: hsl(75, 94%, 57%);
+top: 13rem;
+left: 6.5rem;
+font-weight: 700;
+font-size: 14px;
 }
 .tagLine{
 margin: auto;
 position:absolute;
 font-family: 'Inter';
 color: hsl(0, 0%, 100%);
+top: 15rem;
+left: 4rem;
+font-weight: 400;
+font-size: 14px;
 }
 
 .socialMedia{
@@ -41,25 +57,37 @@ margin: auto;
 position:absolute;
 font-family: 'Inter';
 color: hsl(0, 0%, 100%);
-top: 20rem;
-width: 23rem;
+font-weight: 700;
+text-align: center;
+top: 17rem;
+width: 20rem;
+left: 2.5rem;
 }
 
 .GitHub{
 background-color: hsl(0, 0%, 20%);
-
+padding: 0.9rem;
+border-radius: 0.5rem;
 }
 .frontendMentor{
 background-color: hsl(0, 0%, 20%);
+padding: 0.9rem;
+border-radius: 0.5rem;
 }
 .LinkedIn{
 background-color: hsl(0, 0%, 20%);
+padding: 0.9rem;
+border-radius: 0.5rem;
 }
 .Twitter{
 background-color: hsl(0, 0%, 20%);
+padding: 0.9rem;
+border-radius: 0.5rem;
 }
 .Instagram{
 background-color: hsl(0, 0%, 20%);
+padding: 0.9rem;
+border-radius: 0.5rem;
 }
 
 @media only screen and (min-width: 375px){
