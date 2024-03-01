@@ -1,3 +1,15 @@
-body {
+body{
+background-color: hsl(218, 28%, 13%);
+}
+
+.introPage{
 background-color: hsl(217, 28%, 15%);
+}
+
+.mainPage{
+background-color: hsl(218, 28%, 13%);
+}
+
+.footerPage{
+background-color: hsl(216, 53%, 9%);
 }
