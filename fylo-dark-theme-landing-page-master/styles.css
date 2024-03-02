@@ -1,5 +1,5 @@
 body{
-background-color: hsl(218, 28%, 13%);
+background-color: hsl(218, 28%, 30%);
 }
 
 .introPage{
@@ -12,4 +12,24 @@ background-color: hsl(218, 28%, 13%);
 
 .footerPage{
 background-color: hsl(216, 53%, 9%);
+}
+
+@media only screen and (min-width: 375px){
+ .pagewrap{
+  margin: auto;
+  position:relative;
+  top: 50px;
+  width: 375px;
+  height: 650px;
+  overflow: hidden;
+ }
+}
+
+@media only screen and (min-width: 1440px){
+ .page{
+  margin: auto;
+  position:relative;
+  height: 50rem;
+  width: 90rem;
+ }
 }
