@@ -33,6 +33,34 @@ left: 5rem;
 	white-space: pre;
 }
 
+.introLogo{
+margin: auto;
+position:absolute;
+left: 22rem;
+top: 15rem;
+}
+
+.introHeader{
+margin: auto;
+position:absolute;
+text-align: center;
+font-family: 'Raleway';
+color: hsl(0, 0%, 100%);
+font-weight: 700;
+font-size: 3rem;
+left: 22rem;
+top: 50rem;
+}
+
+.introDesc{
+margin: auto;
+position:absolute;
+text-align: center;
+font-family: 'Open Sans';
+color: hsl(0, 0%, 100%);
+font-weight: 400;
+}
+
 a {
 text-decoration: none;
 color: inherit; 
