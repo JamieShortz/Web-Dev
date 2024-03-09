@@ -80,20 +80,34 @@ background-image: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50
 color: hsl(0, 0%, 100%);
 }
 
+.curve{
+margin: auto;
+position:relative;
+top: 57.9rem;
+}
+
 a {
 text-decoration: none;
 color: inherit; 
 }
 
 .introPage{
+margin: auto;
+position:relative;
 background-color: hsl(217, 28%, 15%);
+
 }
 
 .mainPage{
+margin: auto;
+position:relative;
 background-color: hsl(218, 28%, 13%);
+top: 60rem;
 }
 
 .footerPage{
+margin: auto;
+position:relative;
 background-color: hsl(216, 53%, 9%);
 }
 
