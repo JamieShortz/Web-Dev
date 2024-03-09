@@ -49,7 +49,7 @@ color: hsl(0, 0%, 100%);
 font-weight: 700;
 font-size: 3rem;
 left: 22rem;
-top: 50rem;
+top: 52rem;
 }
 
 .introDesc{
@@ -59,6 +59,25 @@ text-align: center;
 font-family: 'Open Sans';
 color: hsl(0, 0%, 100%);
 font-weight: 400;
+font-size: 1.5rem;
+left: 26rem;
+top: 62rem;
+}
+
+.getStarted{
+margin: auto;
+position:absolute;
+top: 72rem;
+left: 38rem;
+font-family: 'Raleway';
+font-weight: 700;
+font-size: 1.3rem;
+border: none;
+border-radius: 10rem;
+padding: 1.5rem;
+width: 20rem;
+background-image: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+color: hsl(0, 0%, 100%);
 }
 
 a {
