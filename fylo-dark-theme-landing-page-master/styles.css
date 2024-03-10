@@ -86,6 +86,34 @@ position:relative;
 top: 57.9rem;
 }
 
+.access{
+margin: auto;
+position:absolute;
+top: 5rem;
+left: 25rem;
+}
+
+.security{
+margin: auto;
+position:absolute;
+top: 5rem;
+left: 63rem;
+}
+
+.collab{
+margin: auto;
+position:absolute;
+left: 25rem;
+top: 20rem;
+}
+
+.file{
+margin: auto;
+position:absolute;
+left: 63rem;
+top: 20rem;
+}
+
 a {
 text-decoration: none;
 color: inherit; 
@@ -95,14 +123,15 @@ color: inherit;
 margin: auto;
 position:relative;
 background-color: hsl(217, 28%, 15%);
-
+height: 85rem;
 }
 
 .mainPage{
 margin: auto;
 position:relative;
 background-color: hsl(218, 28%, 13%);
-top: 60rem;
+height: 80rem;
+bottom: 0.5rem;
 }
 
 .footerPage{
