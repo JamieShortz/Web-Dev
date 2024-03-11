@@ -1,8 +1,59 @@
 .box{
 margin: auto;
 position: relative;
-width: 10rem;
+background-color: hsl(0, 0%, 100%);
+padding: 5rem;
+width: 18.2rem;
+height: 36rem;
+border-radius: 1rem;
+bottom: 21rem;
+}
 
+.hero{
+margin: auto;
+position: absolute;
+border-radius: 1rem 1rem 0rem 0rem;
+bottom: 32.2rem;
+right: 0.1rem;
+
+}
+.header{
+margin: auto;
+position: absolute;
+}
+
+.description{
+margin: auto;
+position: absolute;
+}
+
+.annual{
+margin: auto;
+position: absolute;
+}
+
+.cost{
+margin: auto;
+position: absolute;
+}
+
+.change{
+margin: auto;
+position: absolute;
+}
+
+.payment{
+margin: auto;
+position: absolute;
+}
+
+.cancel{
+margin: auto;
+position: absolute;
+}
+
+.page{
+background-color: hsl(225, 100%, 94%);
 }
 
 
@@ -13,16 +64,16 @@ width: 10rem;
   top: 50px;
   width: 375px;
   height: 650px;
-  overflow-x: hidden;
+  overflow: hidden;
  }
 }
 
 @media only screen and (min-width: 1440px){
- .pagewrap{
+ .page{
   margin: auto;
   position:relative;
-  top: 150px;
-  width: 1440px;
+  height: 60rem;
+  width: 90rem;
  }
 }
 
