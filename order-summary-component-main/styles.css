@@ -3,7 +3,7 @@ margin: auto;
 position: relative;
 background-color: hsl(0, 0%, 100%);
 padding: 5rem;
-width: 18.2rem;
+width: 18.1rem;
 height: 36rem;
 border-radius: 1rem;
 bottom: 21rem;
@@ -13,43 +13,68 @@ bottom: 21rem;
 margin: auto;
 position: absolute;
 border-radius: 1rem 1rem 0rem 0rem;
-bottom: 32.2rem;
-right: 0.1rem;
+bottom: 32.3rem;
+right: 0.01rem;
 
 }
 .header{
 margin: auto;
 position: absolute;
+font-family: 'Red Hat Display';
+font-weight: 900;
+font-size: 1.5rem;
+bottom: 29rem;
+right: 8rem;
 }
 
 .description{
 margin: auto;
 position: absolute;
+text-align: center;
+font-family: 'Red Hat Display';
+font-weight: 500;
+right: 5rem;
+bottom: 23rem;
 }
 
 .annual{
 margin: auto;
 position: absolute;
+right: 12rem;
+font-family: 'Red Hat Display';
 }
 
 .cost{
 margin: auto;
 position: absolute;
+right: 12rem;
+font-family: 'Red Hat Display';
 }
 
 .change{
 margin: auto;
 position: absolute;
+right: 12rem;
+font-family: 'Red Hat Display';
 }
 
 .payment{
 margin: auto;
 position: absolute;
+right: 12rem;
+font-family: 'Red Hat Display';
 }
 
 .cancel{
 margin: auto;
 position: absolute;
+right: 12rem;
+font-family: 'Red Hat Display';
+}
+
+.decstyle::after{
+	content: "\a";
+	white-space: pre;
 }
 
 .page{
@@ -72,7 +97,7 @@ background-color: hsl(225, 100%, 94%);
  .page{
   margin: auto;
   position:relative;
-  height: 60rem;
+  height: 59rem;
   width: 90rem;
  }
 }
