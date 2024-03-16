@@ -22,6 +22,7 @@ margin: auto;
 position: absolute;
 font-family: 'Red Hat Display';
 font-weight: 900;
+color: hsl(223, 47%, 23%);
 font-size: 1.5rem;
 bottom: 29rem;
 right: 8rem;
@@ -33,6 +34,7 @@ position: absolute;
 text-align: center;
 font-family: 'Red Hat Display';
 font-weight: 500;
+color: hsl(224, 23%, 55%);
 right: 5rem;
 bottom: 23rem;
 }
@@ -40,29 +42,52 @@ bottom: 23rem;
 .annual{
 margin: auto;
 position: absolute;
-right: 12rem;
 font-family: 'Red Hat Display';
+font-weight: 900;
+color: hsl(223, 47%, 23%);
+left: 5.6rem;
+bottom: 3.5rem;
 }
 
 .cost{
 margin: auto;
 position: absolute;
-right: 12rem;
 font-family: 'Red Hat Display';
+color: hsl(224, 23%, 55%);
+font-weight: 900;
+left: 5.6rem;
+bottom: 1.8rem;
 }
 
 .change{
 margin: auto;
 position: absolute;
-right: 12rem;
 font-family: 'Red Hat Display';
+color: hsl(245, 75%, 52%);
+font-weight: 900;
+text-decoration: underline;
+left: 16rem;
+bottom: 2.5rem;
+}
+
+.annualPlan{
+margin: auto;
+position: absolute;
+background-color: hsl(225, 100%, 98%);
+padding: 1.6rem;
+border-radius: 1rem;
+width: 18rem;
+bottom: 15.4rem;
+right: 3.5rem;
 }
 
 .payment{
 margin: auto;
 position: absolute;
-right: 12rem;
+background-color: hsl(245, 75%, 52%);
 font-family: 'Red Hat Display';
+right: 12rem;
+bottom: 5rem;
 }
 
 .cancel{
