@@ -114,6 +114,70 @@ left: 63rem;
 top: 20rem;
 }
 
+.accessHeader{
+margin: auto;
+position:absolute;
+color: hsl(0, 0%, 100%);
+font-family: 'Raleway';
+font-weight: 700;
+font-size: 2rem;
+left: 21rem;
+top: 12rem;
+}
+
+.accessDesc{
+margin: auto;
+position:absolute;
+color: hsl(0, 0%, 100%);
+font-family: 'Open Sans';
+font-weight: 400;
+left: 25rem;
+top: 5rem;
+}
+
+.secureHeader{
+margin: auto;
+position:absolute;
+color: hsl(0, 0%, 100%);
+}
+
+.secureDesc{
+margin: auto;
+position:absolute;
+color: hsl(0, 0%, 100%);
+}
+
+.realHeader{
+margin: auto;
+position:absolute;
+color: hsl(0, 0%, 100%);
+}
+
+.realDesc{
+margin: auto;
+position:absolute;
+color: hsl(0, 0%, 100%);
+}
+
+.fileHeader{
+margin: auto;
+position:absolute;
+color: hsl(0, 0%, 100%);
+}
+
+.fileDesc{
+margin: auto;
+position:absolute;
+color: hsl(0, 0%, 100%);
+}
+
+.productive{
+margin: auto;
+position:absolute;
+top: 50rem;
+right: 10rem;
+}
+
 a {
 text-decoration: none;
 color: inherit; 
