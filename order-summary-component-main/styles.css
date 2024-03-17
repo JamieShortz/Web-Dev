@@ -24,7 +24,7 @@ font-family: 'Red Hat Display';
 font-weight: 900;
 color: hsl(223, 47%, 23%);
 font-size: 1.5rem;
-bottom: 29rem;
+bottom: 28rem;
 right: 8rem;
 }
 
@@ -68,6 +68,13 @@ font-weight: 900;
 text-decoration: underline;
 left: 16rem;
 bottom: 2.5rem;
+cursor:pointer;
+transition: .1s background ease;
+}
+
+.change:hover{
+color: hsl(245, 75%, 70%);
+text-decoration: none;
 }
 
 .annualPlan{
@@ -85,9 +92,21 @@ right: 3.5rem;
 margin: auto;
 position: absolute;
 background-color: hsl(245, 75%, 52%);
+color: hsl(0, 0%, 100%);
 font-family: 'Red Hat Display';
-right: 12rem;
-bottom: 5rem;
+font-weight: 900;
+padding: 1rem;
+border-radius: 1rem;
+border: none;
+right: 3.5rem;
+width: 21rem;
+bottom: 10rem;
+cursor:pointer;
+transition: .1s background ease;
+}
+
+.payment:hover{
+background: hsl(245, 75%, 70%);
 }
 
 .cancel{
@@ -95,6 +114,16 @@ margin: auto;
 position: absolute;
 right: 12rem;
 font-family: 'Red Hat Display';
+font-weight: 900;
+color: hsl(224, 23%, 55%);
+right: 11rem;
+bottom: 6rem;
+cursor:pointer;
+transition: .1s background ease;
+}
+
+.cancel:hover{
+color: hsl(224, 23%, 10%);
 }
 
 .decstyle::after{
