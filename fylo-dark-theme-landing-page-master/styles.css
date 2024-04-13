@@ -120,19 +120,21 @@ position:absolute;
 color: hsl(0, 0%, 100%);
 font-family: 'Raleway';
 font-weight: 700;
-font-size: 2rem;
-left: 21rem;
-top: 12rem;
+font-size: 1.2rem;
+left: 19rem;
+top: 11.5rem;
 }
 
 .accessDesc{
 margin: auto;
 position:absolute;
 color: hsl(0, 0%, 100%);
+text-align: center;
 font-family: 'Open Sans';
 font-weight: 400;
-left: 25rem;
-top: 5rem;
+font-size: 0.8rem;
+left: 17rem;
+top: 13.5rem;
 }
 
 .secureHeader{
@@ -145,6 +147,10 @@ color: hsl(0, 0%, 100%);
 margin: auto;
 position:absolute;
 color: hsl(0, 0%, 100%);
+text-align: center;
+font-family: 'Open Sans';
+font-weight: 400;
+font-size: 0.8rem;
 }
 
 .realHeader{
@@ -157,6 +163,10 @@ color: hsl(0, 0%, 100%);
 margin: auto;
 position:absolute;
 color: hsl(0, 0%, 100%);
+text-align: center;
+font-family: 'Open Sans';
+font-weight: 400;
+font-size: 0.8rem;
 }
 
 .fileHeader{
@@ -169,6 +179,10 @@ color: hsl(0, 0%, 100%);
 margin: auto;
 position:absolute;
 color: hsl(0, 0%, 100%);
+text-align: center;
+font-family: 'Open Sans';
+font-weight: 400;
+font-size: 0.8rem;
 }
 
 .productive{
