@@ -110,7 +110,7 @@ top: 20rem;
 .file{
 margin: auto;
 position:absolute;
-left: 63rem;
+left: 62rem;
 top: 20rem;
 }
 
@@ -141,6 +141,11 @@ top: 13.5rem;
 margin: auto;
 position:absolute;
 color: hsl(0, 0%, 100%);
+font-family: 'Raleway';
+font-weight: 700;
+font-size: 1.2rem;
+top: 11.5rem;
+right: 18.5rem;
 }
 
 .secureDesc{
@@ -151,12 +156,19 @@ text-align: center;
 font-family: 'Open Sans';
 font-weight: 400;
 font-size: 0.8rem;
+top: 13.5rem;
+right: 14rem;
 }
 
 .realHeader{
 margin: auto;
 position:absolute;
 color: hsl(0, 0%, 100%);
+font-family: 'Raleway';
+font-weight: 700;
+font-size: 1.2rem;
+left: 20rem;
+top: 26.5rem;
 }
 
 .realDesc{
@@ -167,12 +179,19 @@ text-align: center;
 font-family: 'Open Sans';
 font-weight: 400;
 font-size: 0.8rem;
+left: 17rem;
+top: 28.5rem;
 }
 
 .fileHeader{
 margin: auto;
 position:absolute;
 color: hsl(0, 0%, 100%);
+font-family: 'Raleway';
+font-weight: 700;
+font-size: 1.2rem;
+right: 19rem;
+top: 26.5rem;
 }
 
 .fileDesc{
@@ -183,6 +202,8 @@ text-align: center;
 font-family: 'Open Sans';
 font-weight: 400;
 font-size: 0.8rem;
+right: 15.5rem;
+top: 28.5rem;
 }
 
 .productive{
