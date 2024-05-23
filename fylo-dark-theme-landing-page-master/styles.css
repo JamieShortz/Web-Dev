@@ -209,8 +209,59 @@ top: 28.5rem;
 .productive{
 margin: auto;
 position:absolute;
-top: 50rem;
-right: 10rem;
+top: 40rem;
+left: 6rem;
+}
+
+.stayHeader{
+margin: auto;
+position:absolute;
+font-family: 'Raleway';
+color: hsl(0, 0%, 100%);
+font-weight: 700;
+font-size: 3rem;
+top: 45rem;
+right: 17rem;
+}
+
+.stayDesc{
+margin: auto;
+position:absolute;
+font-family: 'Open Sans';
+color: hsl(0, 0%, 100%);
+font-weight: 400;
+font-size: 1.1rem;
+top: 55rem;
+right: 5rem;
+}
+
+.fyloWorks{
+margin: auto;
+position:absolute;
+font-family: 'Open Sans';
+color: hsl(176, 68%, 64%);
+font-weight: 400;
+font-size: 1.1rem;
+top: 64rem;
+left: 47rem;
+
+}
+
+.arrow{
+margin: auto;
+position:absolute;
+top: 64.3rem;
+left: 57.5rem;
+}
+
+.fyloBorder{
+margin: auto;
+position:absolute;
+top: 65.8rem;
+left: 47rem;
+background-color: hsl(176, 68%, 64%);
+width: 11.4rem;
+height: 0.1rem;
 }
 
 a {
