@@ -264,6 +264,114 @@ width: 11.4rem;
 height: 0.1rem;
 }
 
+.quotes{
+margin: auto;
+position:absolute;
+top: 78rem;
+left: 9rem;
+}
+
+.satish{
+margin: auto;
+position:absolute;
+top: 78rem;
+left: 9rem;
+height: 20rem;
+background-color: hsl(219, 30%, 18%);
+color: hsl(0, 0%, 100%);
+font-family: 'Open Sans';
+font-weight: 400;
+font-size: 0.8rem;
+}
+
+.profile1{
+margin: auto;
+position:absolute;
+}
+
+.satishName{
+margin: auto;
+position:absolute;
+top: 15rem;
+font-weight: 700;
+letter-spacing: 0.1rem;
+}
+
+.satishFounder{
+margin: auto;
+position:absolute;
+top: 18rem;
+letter-spacing: 0.05rem;
+}
+
+
+.bruce{
+margin: auto;
+position:absolute;
+top: 78rem;
+left: 35rem;
+height: 20rem;
+background-color: hsl(219, 30%, 18%);
+color: hsl(0, 0%, 100%);
+font-family: 'Open Sans';
+font-weight: 400;
+font-size: 0.8rem;
+}
+
+.profile2{
+margin: auto;
+position:absolute;
+}
+
+.bruceName{
+margin: auto;
+position:absolute;
+top: 15rem;
+font-weight: 700;
+letter-spacing: 0.1rem;
+}
+
+.bruceFounder{
+margin: auto;
+position:absolute;
+top: 18rem;
+letter-spacing: 0.05rem;
+}
+
+.iva{
+margin: auto;
+position:absolute;
+top: 78rem;
+right: 10rem;
+height: 20rem;
+background-color: hsl(219, 30%, 18%);
+color: hsl(0, 0%, 100%);
+font-family: 'Open Sans';
+font-weight: 400;
+font-size: 0.8rem;
+}
+
+.profile3{
+margin: auto;
+position:absolute;
+}
+
+.ivaName{
+margin: auto;
+position:absolute;
+top: 15rem;
+font-weight: 700;
+letter-spacing: 0.1rem;
+}
+
+.ivaFounder{
+margin: auto;
+position:absolute;
+top: 18rem;
+letter-spacing: 0.05rem;
+}
+
+
 a {
 text-decoration: none;
 color: inherit; 
