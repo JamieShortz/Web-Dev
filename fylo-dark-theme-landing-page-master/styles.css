@@ -424,6 +424,17 @@ font-size: 0.6rem;
 letter-spacing: 0.05rem;
 }
 
+.earlyAccess{
+margin: auto;
+position:absolute;
+background-color: hsl(217, 28%, 15%);
+bottom: 3rem;
+height: 15rem;
+width: 50rem;
+left: 20rem;
+border-radius: 0.5rem;
+z-index: 1;
+}
 
 a {
 text-decoration: none;
@@ -449,6 +460,8 @@ bottom: 0.5rem;
 margin: auto;
 position:relative;
 background-color: hsl(216, 53%, 9%);
+bottom: 9rem;
+height: 30rem;
 }
 
 @media only screen and (min-width: 375px){
