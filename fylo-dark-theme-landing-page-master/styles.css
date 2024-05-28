@@ -436,6 +436,22 @@ border-radius: 0.5rem;
 z-index: 1;
 }
 
+.getStartedAccess{
+margin: auto;
+position:absolute;
+top: 9.5rem;
+right: 5rem;
+font-family: 'Raleway';
+font-weight: 700;
+font-size: 1rem;
+border: none;
+border-radius: 10rem;
+padding: 1rem;
+width: 15rem;
+background-image: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+color: hsl(0, 0%, 100%);
+}
+
 a {
 text-decoration: none;
 color: inherit; 
