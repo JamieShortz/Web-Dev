@@ -488,6 +488,37 @@ top: 9.5rem;
 left: 4.5rem;
 }
 
+.footerLogo{
+margin: auto;
+position:absolute;
+top: 10.5rem;
+left: 9.5rem;
+}
+
+.loremIpsum{
+margin: auto;
+position:absolute;
+top: 16rem;
+left: 12rem;
+}
+
+.footMenus{
+margin: auto;
+position:absolute;
+top: 16rem;
+right: 20rem;
+}
+
+.footMenusTwo{
+margin: auto;
+position:absolute;
+top: 16rem;
+right: 12rem;
+}
+.footMenu{
+list-style-type: none;
+}
+
 a {
 text-decoration: none;
 color: inherit; 
@@ -514,6 +545,10 @@ position:relative;
 background-color: hsl(216, 53%, 9%);
 bottom: 9rem;
 height: 30rem;
+font-family: 'Open Sans';
+color: hsl(0, 0%, 100%);
+font-weight: 400;
+font-size: 1.1rem;
 }
 
 @media only screen and (min-width: 375px){
