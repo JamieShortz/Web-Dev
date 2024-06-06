@@ -519,6 +519,31 @@ right: 12rem;
 list-style-type: none;
 }
 
+.location{
+margin: auto;
+position:absolute;
+}
+
+.phone{
+margin: auto;
+position:absolute;
+}
+
+.phoneNum{
+margin: auto;
+position:absolute;
+}
+
+.email{
+margin: auto;
+position:absolute;
+}
+
+.emailAdd{
+margin: auto;
+position:absolute;
+}
+
 a {
 text-decoration: none;
 color: inherit; 
