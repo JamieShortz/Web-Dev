@@ -27,7 +27,6 @@ top: 3.5rem;
 left: 5rem;
 }
 
-
 .decstyle::after{
 	content: "\a";
 	white-space: pre;
