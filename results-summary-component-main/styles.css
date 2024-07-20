@@ -7,6 +7,8 @@ margin: auto;
 position:relative;
 background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 background-attachment: fixed;
+font-family: 'Hanken Grotesk';
+color: hsl(0, 0%, 100%);
 width: 20rem;
 height: 30rem;
 border-radius: 2rem;
@@ -19,10 +21,50 @@ z-index: 1;
 margin: auto;
 position:relative;
 background-color: hsl(0, 0%, 100%);
+font-family: 'Hanken Grotesk';
 width: 40rem;
 height: 30rem;
 border-radius: 2rem;
 bottom:19rem;
+}
+
+.resultFocus{
+margin: auto;
+position:relative;
+background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+border-radius: 20rem;
+height: 10rem;
+width: 10rem;
+top: 5rem;
+}
+
+.seventySix{
+margin: auto;
+position:relative;
+font-weight: 800;
+}
+
+.ofOne{
+color: hsl(241, 100%, 89%);
+}
+
+.yourResult{
+margin: auto;
+position:relative;
+color: hsl(221, 100%, 96%);
+left: 10rem;
+}
+
+.yourScore{
+margin: auto;
+position:relative;
+color: hsl(221, 100%, 96%);
+}
+
+.greatHeader{
+margin: auto;
+position:relative;
+font-weight: 700;
 }
 
 @media only screen and (min-width: 375px){
