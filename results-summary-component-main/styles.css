@@ -12,8 +12,8 @@ color: hsl(0, 0%, 100%);
 width: 20rem;
 height: 30rem;
 border-radius: 2rem;
-top:12rem;
-right: 10rem;
+top:14rem;
+right: 9rem;
 z-index: 1;
 }
 
@@ -25,7 +25,8 @@ font-family: 'Hanken Grotesk';
 width: 40rem;
 height: 30rem;
 border-radius: 2rem;
-bottom:19rem;
+bottom:17rem;
+left: 1rem;
 }
 
 .resultFocus{
@@ -33,38 +34,58 @@ margin: auto;
 position:relative;
 background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
 border-radius: 20rem;
-height: 10rem;
-width: 10rem;
+height: 11rem;
+width: 11rem;
 top: 5rem;
 }
 
 .seventySix{
 margin: auto;
 position:relative;
+font-size: 3.5rem;
 font-weight: 800;
+top: 2.5rem;
+left: 3.5rem;
 }
 
 .ofOne{
+margin: auto;
+position:relative;
 color: hsl(241, 100%, 89%);
+font-weight: 500;
+top: 2.5rem;
+left: 4rem;
 }
 
 .yourResult{
 margin: auto;
 position:relative;
 color: hsl(221, 100%, 96%);
-left: 10rem;
+font-weight: 700;
+left: 7rem;
+top: 3rem;
 }
 
 .yourScore{
 margin: auto;
 position:relative;
+text-align: center;
 color: hsl(221, 100%, 96%);
+top: 8rem;
 }
 
 .greatHeader{
 margin: auto;
 position:relative;
+font-size: 1.5rem;
 font-weight: 700;
+top: 7rem;
+left: 8rem;
+}
+
+.decstyle::after{
+	content: "\a";
+	white-space: pre;
 }
 
 @media only screen and (min-width: 375px){
