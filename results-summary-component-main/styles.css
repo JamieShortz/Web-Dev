@@ -12,7 +12,7 @@ color: hsl(0, 0%, 100%);
 width: 20rem;
 height: 30rem;
 border-radius: 2rem;
-top:14rem;
+top:13rem;
 right: 9rem;
 z-index: 1;
 }
@@ -62,7 +62,8 @@ margin: auto;
 position:relative;
 color: hsl(221, 100%, 96%);
 font-weight: 700;
-left: 7rem;
+font-size: 1.2rem;
+left: 6.8rem;
 top: 3rem;
 }
 
@@ -81,6 +82,102 @@ font-size: 1.5rem;
 font-weight: 700;
 top: 7rem;
 left: 8rem;
+}
+
+.yourSummary{
+margin: auto;
+position:absolute;
+font-weight: 700;
+font-size: 1.2rem;
+color: hsl(224, 30%, 27%);
+right: 12rem;
+top: 2rem;
+}
+
+.reactionBox{
+margin: auto;
+position:relative;
+background-color: hsl(0, 100%, 97%);
+border-radius: 0.5rem;
+width: 15rem;
+height: 3.5rem;
+top: 5rem;
+left: 10rem;
+}
+
+.memoryBox{
+margin: auto;
+position:relative;
+background-color: hsl(39, 100%, 97%);
+border-radius: 0.5rem;
+width: 15rem;
+height: 3.5rem;
+top: 6rem;
+left: 10rem;
+}
+
+.verbalBox{
+margin: auto;
+position:relative;
+background-color: hsl(166, 100%, 97%);
+border-radius: 0.5rem;
+width: 15rem;
+height: 3.5rem;
+top: 7rem;
+left: 10rem;
+}
+
+.visualBox{
+margin: auto;
+position:relative;
+background-color: hsl(234, 85%, 97%);
+border-radius: 0.5rem;
+width: 15rem;
+height: 3.5rem;
+top: 8rem;
+left: 10rem;
+}
+
+.reaction{
+margin: auto;
+position:absolute;
+color: hsl(0, 100%, 67%);
+}
+
+.memory{
+margin: auto;
+position:absolute;
+opacity: 100%;
+color: hsl(39, 100%, 56%);
+}
+
+.verbal{
+margin: auto;
+position:absolute;
+opacity: 100%;
+color: hsl(166, 100%, 37%);
+}
+
+.visual{
+margin: auto;
+position:absolute;
+opacity: 100%;
+color: hsl(234, 85%, 45%);
+}
+
+.continue{
+margin: auto;
+position:absolute;
+background-color: hsl(224, 30%, 27%);
+color: hsl(0, 0%, 100%);
+border-radius: 2rem;
+border: none;
+font-family: 'Hanken Grotesk';
+font-weight: 500;
+width: 15rem;
+height: 3.5rem;
+right: 2.5rem;
+top: 25rem;
 }
 
 .decstyle::after{
