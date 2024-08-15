@@ -186,6 +186,12 @@ width: 15rem;
 height: 2.8rem;
 right: 2.5rem;
 top: 25rem;
+cursor:pointer;
+transition: .3s background ease;
+}
+.continue:hover{
+background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+
 }
 
 .iconReaction{
@@ -263,10 +269,10 @@ font-weight: 700;
  .pagewrap{
   margin: auto;
   position:relative;
-  top: 50px;
+  top: 100px;
   width: 375px;
-  height: 650px;
-  overflow-x: hidden;
+  height: 750px;
+  overflow: hidden;
  }
 }
 
@@ -274,8 +280,10 @@ font-weight: 700;
  .pagewrap{
   margin: auto;
   position:relative;
-  top: 150px;
+  top: 50px;
   width: 1440px;
+  height: 1200px
+  overflow: hidden;
  }
 }
 
