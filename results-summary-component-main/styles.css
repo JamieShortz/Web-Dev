@@ -265,26 +265,24 @@ font-weight: 700;
 	white-space: pre;
 }
 
-@media only screen and (min-width: 375px){
- .pagewrap{
-  margin: auto;
-  position:relative;
-  top: 100px;
-  width: 375px;
-  height: 750px;
-  overflow: hidden;
- }
-}
 
-@media only screen and (min-width: 1440px){
+@media only screen and (max-width: 1440px){
  .pagewrap{
   margin: auto;
   position:relative;
   top: 50px;
-  width: 1440px;
+  width: 375px;
   height: 1200px
   overflow: hidden;
+	
  }
+
+  .result{
+   margin: auto;
+   position:relative;
+
+   top: 2rem;
+  }
 }
 
 .attribution { font-size: 11px; text-align: center; color: hsl(178, 100%, 25%); }
