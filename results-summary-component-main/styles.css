@@ -142,6 +142,8 @@ left: 10rem;
 margin: auto;
 position:absolute;
 color: hsl(0, 100%, 67%);
+top: 1.2rem;
+left: 2.8rem;
 }
 
 .memory{
@@ -149,6 +151,8 @@ margin: auto;
 position:absolute;
 opacity: 100%;
 color: hsl(39, 100%, 56%);
+top: 1.2rem;
+left: 2.8rem;
 }
 
 .verbal{
@@ -156,6 +160,8 @@ margin: auto;
 position:absolute;
 opacity: 100%;
 color: hsl(166, 100%, 37%);
+top: 1.2rem;
+left: 2.8rem;
 }
 
 .visual{
@@ -163,6 +169,8 @@ margin: auto;
 position:absolute;
 opacity: 100%;
 color: hsl(234, 85%, 45%);
+top: 1.2rem;
+left: 2.8rem;
 }
 
 .continue{
@@ -175,9 +183,75 @@ border: none;
 font-family: 'Hanken Grotesk';
 font-weight: 500;
 width: 15rem;
-height: 3.5rem;
+height: 2.8rem;
 right: 2.5rem;
 top: 25rem;
+}
+
+.iconReaction{
+margin: auto;
+position:absolute;
+top: 1.2rem;
+left: 0.8rem;
+}
+
+.iconMemory{
+margin: auto;
+position:absolute;
+top: 1.2rem;
+left: 0.8rem;
+}
+
+.iconVerbal{
+margin: auto;
+position:absolute;
+top: 1.2rem;
+left: 0.8rem;
+}
+
+.iconVisual{
+margin: auto;
+position:absolute;
+top: 1.2rem;
+left: 0.8rem;
+}
+
+.eighty{
+margin: auto;
+position:relative;
+list-style-type: none;
+bottom:8.8rem;
+left: 30rem;
+}
+.ninetyTwo{
+margin: auto;
+position:relative;
+list-style-type: none;
+bottom:5.6rem;
+left: 30rem;
+}
+.sixtyOne{
+margin: auto;
+position:relative;
+list-style-type: none;
+bottom:2.45rem;
+left: 30rem;
+}
+.seventyTwo{
+margin: auto;
+position:relative;
+list-style-type: none;
+top:0.75rem;
+left: 30rem;
+}
+
+.slashOne{
+color: hsl(224, 30%, 67%);
+}
+
+.percentages{
+color: hsl(224, 30%, 27%);
+font-weight: 700;
 }
 
 .decstyle::after{
@@ -205,9 +279,9 @@ top: 25rem;
  }
 }
 
-.attribution { font-size: 11px; text-align: center; color: hsl(178, 100%, 50%); }
+.attribution { font-size: 11px; text-align: center; color: hsl(178, 100%, 25%); }
 .attribution a { color: hsl(215, 51%, 70%); }
 .attribution{
   position:relative;
-  top: 20px;
+  bottom: 16rem;
 }
