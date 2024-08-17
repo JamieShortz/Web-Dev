@@ -280,7 +280,7 @@ font-weight: 700;
   .result{
    margin: auto;
    position:relative;
-
+   left: 1.5rem;
    top: 2rem;
   }
 }
