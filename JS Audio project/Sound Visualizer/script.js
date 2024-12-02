@@ -21,8 +21,9 @@ container.addEventListener('click', function(){
 	const dataArray = new Uint8Array(bufferLength);
 
 	const barWidth = canvas.width/bufferLength;
-	let barHeight;
-	let x = 0;
+	//let barHeight;  //???
+	//let x; //???
+
 
 	function animate(){
 		x = 0;
@@ -31,7 +32,7 @@ container.addEventListener('click', function(){
 		for (let i = 0; i < bufferLength; i++){
 			barHeight = dataArray[i];
 			ctx.fillStyle = 'white';
-			ctx.fillRect(x, canvas.height = barHeight, barWidth, barHeight);
+			ctx.fillRect(x, canvas.height - barHeight, barWidth, barHeight);
 			x += barWidth;
 		}
 		requestAnimationFrame(animate);
