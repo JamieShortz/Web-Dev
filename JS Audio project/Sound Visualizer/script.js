@@ -21,8 +21,8 @@ container.addEventListener('click', function(){
 	const dataArray = new Uint8Array(bufferLength);
 
 	const barWidth = canvas.width/bufferLength;
-	//let barHeight;  //???
-	//let x; //???
+	let barHeight; //???
+	let x; //???
 
 
 	function animate(){
