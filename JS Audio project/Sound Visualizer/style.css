@@ -1,6 +1,6 @@
-*{
-  margin:0;
-  padding:0;
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -21,7 +21,7 @@
   height: 100%;
 }
 
-#audio1{
+#audio1 {
   width: 50%;
   margin: 50px auto;
   display: block;
