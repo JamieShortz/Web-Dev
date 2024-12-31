@@ -65,13 +65,16 @@ file.addEventListener('change', function(){
 
 function drawVisualizer(bufferLength, x, barWidth, barHeight, dataArray){
 	for (let i = 0; i < bufferLength; i++){
-		barHeight = dataArray[i] * 1.5;
+		barHeight = dataArray[i] * 2.5;
 		ctx.save();
 		ctx.translate(canvas.width/2, canvas.height/2);
 		ctx.rotate(i * 4.184);
-		const hue = i * 0.3;
-		ctx.fillStyle = 'hsl(' + hue + ',100%,' + barHeight/3 + '%)';
-		ctx.fillRect(0, 0, barWidth, barHeight);
+		const hue = 120 + i * 0.05;
+		ctx.fillStyle = 'hsl(' + hue + ',100%,50%)';
+		ctx.beginPath();
+		ctx.arc(0,barHeight, barHeight/2, 0, Math.PI/ 2);
+		ctx.fill();
+		ctx.stroke();
 		x += barWidth;
 		ctx.restore();
 	}
