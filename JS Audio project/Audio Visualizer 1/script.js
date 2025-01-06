@@ -72,7 +72,7 @@ function drawVisualizer(bufferLength, x, barWidth, barHeight, dataArray){
 		const hue = 120 + i * 0.05;
 		ctx.fillStyle = 'hsl(' + hue + ',100%,50%)';
 		ctx.beginPath();
-		ctx.arc(10,barHeight, barHeight/2, 0, Math.PI/ 2);
+		ctx.arc(100,barHeight, barHeight/2, 0, Math.PI/ 4);
 		ctx.fill();
 		ctx.stroke();
 		x += barWidth;
