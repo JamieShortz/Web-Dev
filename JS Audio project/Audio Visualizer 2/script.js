@@ -69,9 +69,14 @@ function drawVisualizer(bufferLength, x, barWidth, barHeight, dataArray){
 			ctx.save();
 			ctx.translate(canvas.width/2, canvas.height/2);
 			ctx.rotate(i * bufferLength * 4);
-			const hue = i * 0.3;
-			ctx.fillStyle= 'hsl(' + hue + ',100%,' + barHeight/3 + '%)';
-			ctx.fillRect(0, 0, barWidth, barHeight);
+			const hue = 250 + i * 2;
+			ctx.fillStyle= 'hsl(' + hue + ',100%, 50%)';
+			ctx.beginPath();
+			ctx.arc(0, barHeight, barHeight/10, 0, Math.PI * 2);
+			ctx.arc(0, barHeight/1.5, barHeight/20, 0, Math.PI * 2);
+			ctx.arc(0, barHeight/2, barHeight/30, 0, Math.PI * 2);
+			ctx.arc(0, barHeight/3, barHeight/40, 0, Math.PI * 2);
+			ctx.fill();
 			x += barWidth;
 			ctx.restore();
 		}
