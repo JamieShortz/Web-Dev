@@ -4,6 +4,10 @@ const file = document.getElementById("fileupload");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 const ctx = canvas.getContext('2d');
+ctx.shadowOffsetX = 2;
+ctx.shadowOffsetY = 5;
+ctx.shadowBlur = 0;
+ctx.shadowColor = 'white';
 let audioSource;
 let analyser;
 
@@ -68,7 +72,7 @@ function drawVisualizer(bufferLength, x, barWidth, barHeight, dataArray){
 			barHeight = dataArray[i] * 1.4;
 			ctx.save();
 			ctx.translate(canvas.width/2, canvas.height/2);
-			ctx.rotate(i * bufferLength * 4);
+			ctx.rotate(i * bufferLength * -4.0003);
 			const hue = 250 + i * 2;
 			ctx.fillStyle= 'hsl(' + hue + ',100%, 50%)';
 			ctx.beginPath();
