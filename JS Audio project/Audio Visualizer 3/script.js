@@ -6,8 +6,10 @@ canvas.height = window.innerHeight;
 const ctx = canvas.getContext('2d');
 let audioSource;
 let analyser;
-const sprite = new Image();
-sprite.src = 'logo.png';
+const sprite = document.createElement("img");
+sprite.src = 'image/groudon.jpg';
+document.body.appendChild(sprite);
+
 
 container.addEventListener('click', function(){
 	const audio1 = document.getElementById('audio1');
