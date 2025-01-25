@@ -527,11 +527,15 @@ position:absolute;
 .phone{
 margin: auto;
 position:absolute;
+top: 16rem;
+right: 30rem;
 }
 
 .phoneNum{
 margin: auto;
 position:absolute;
+top: 16rem;
+right: 39rem;
 }
 
 .email{
@@ -542,6 +546,8 @@ position:absolute;
 .emailAdd{
 margin: auto;
 position:absolute;
+top: 19rem;
+right: 38.5rem;
 }
 
 a {
