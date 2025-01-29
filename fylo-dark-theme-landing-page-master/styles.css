@@ -522,13 +522,15 @@ margin: 1rem;
 .location{
 margin: auto;
 position:absolute;
+top: 16.5rem;
+left: 9.5rem;
 }
 
 .phone{
 margin: auto;
 position:absolute;
-top: 16rem;
-right: 30rem;
+top: 16.3rem;
+right: 49.5rem;
 }
 
 .phoneNum{
@@ -541,13 +543,57 @@ right: 39rem;
 .email{
 margin: auto;
 position:absolute;
+top: 19.3rem;
+right: 49.5rem;
 }
 
 .emailAdd{
 margin: auto;
 position:absolute;
 top: 19rem;
-right: 38.5rem;
+right: 38rem;
+}
+
+.socials{
+margin: auto;
+position:relative;
+top: 17rem;
+left: 77rem;
+}
+
+.facebook{
+margin-right: 1rem;
+border-radius: 10rem;
+border: 0.1rem solid white;
+padding: 0.5rem;
+cursor:pointer;
+}
+
+.facebook:hover{
+background: hsl(176, 68%, 64%);
+}
+
+.twitter{
+margin-right: 1rem;
+border-radius: 10rem;
+border: 0.1rem solid white;
+padding: 0.5rem;
+cursor:pointer;
+}
+
+.twitter:hover{
+background: hsl(176, 68%, 64%);
+}
+
+.instagram{
+border-radius: 10rem;
+border: 0.1rem solid white;
+padding: 0.5rem;
+cursor:pointer;
+}
+
+.instagram:hover{
+background: hsl(176, 68%, 64%);
 }
 
 a {
