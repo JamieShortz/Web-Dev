@@ -4,6 +4,12 @@ const file = document.getElementById("fileupload");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 const ctx = canvas.getContext('2d');
+ctx.lineCap = 'round';
+ctx.shadowOffsetX = 0;
+ctx.shadowOffsetY = 0;
+ctx.shadowBlur = 20;
+ctx.shadowColor = 'gold';
+ctx.globalCompositeOperation ='lighten';
 let audioSource;
 let analyser;
 
@@ -69,9 +75,13 @@ function drawVisualizer(bufferLength, x, barWidth, barHeight, dataArray){
 			ctx.save();
 			ctx.translate(canvas.width/2, canvas.height/2);
 			ctx.rotate(i * bufferLength / 1.2);
+			ctx.lineWidth = barHeight/7;
 			const hue = 200 + i * 5;
-			ctx.fillStyle= 'hsl(' + hue + ',100%, 50%)';
-			ctx.fillRect(0, 0, barWidth, barHeight);
+			ctx.strokeStyle= 'hsl(' + hue + ',100%, 50%)';
+			ctx.beginPath();
+			ctx.moveTo(0, barHeight/1.1);
+			ctx.lineTo(barHeight/1.1, barHeight);
+			ctx.stroke();
 			x += barWidth;
 			ctx.restore();
 		}
