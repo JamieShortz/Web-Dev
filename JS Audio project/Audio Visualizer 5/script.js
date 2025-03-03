@@ -4,7 +4,7 @@ const file = document.getElementById("fileupload");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 const ctx = canvas.getContext('2d');
-ctx.globalCompositeOperation ='difference';
+ctx.globalCompositeOperation ='lighten';
 let audioSource;
 let analyser;
 
