@@ -4,6 +4,7 @@ const file = document.getElementById("fileupload");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 const ctx = canvas.getContext('2d');
+ctx.fillStyle = "yellow";
 let audioSource;
 let analyser;
 
@@ -16,7 +17,7 @@ container.addEventListener('click', function(){
 	analyser = audioContext.createAnalyser();
 	audioSource.connect(analyser);
 	analyser.connect(audioContext.destination);
-	analyser.fftSize = 2048;
+	analyser.fftSize = 512;
 	const bufferLength = analyser.frequencyBinCount;
 	const dataArray = new Uint8Array(bufferLength);
 
@@ -45,7 +46,7 @@ file.addEventListener('change', function(){
 	analyser = audioContext.createAnalyser();
 	audioSource.connect(analyser);
 	analyser.connect(audioContext.destination);
-	analyser.fftSize = 2048;
+	analyser.fftSize = 512;
 	const bufferLength = analyser.frequencyBinCount;
 	const dataArray = new Uint8Array(bufferLength);
 
@@ -65,13 +66,22 @@ file.addEventListener('change', function(){
 
 function drawVisualizer(bufferLength, x, barWidth, barHeight, dataArray){
 	for (let i = 0; i < bufferLength; i++){
-			barHeight = dataArray[i] * 1.5;
+			barHeight = dataArray[i] * 1.2;
 			ctx.save();
 			ctx.translate(canvas.width/2, canvas.height/2);
-			ctx.rotate(i * Math.PI * 10 / bufferLength);
-			const hue = i * 0.4;
-			ctx.fillStyle= 'hsl(' + hue + ',100%,' + barHeight/3 + '%)';
-			ctx.fillRect(0, 0, barWidth, barHeight);
+			ctx.rotate(i * 1.1);
+			ctx.fillRect(0, 0, -barHeight/2, -barHeight);
+			x += barWidth;
+			ctx.restore();
+		}
+	for (let i = 0; i < 15; i++){
+			barHeight = dataArray[i] * 0.8;
+			ctx.save();
+			ctx.translate(canvas.width/2, canvas.height/2);
+			ctx.rotate(i * 1.2);
+			ctx.beginPath();
+			ctx.arc(0, barHeight * 1.8, barHeight/4, 0, Math.PI * 2);
+			ctx.fill();
 			x += barWidth;
 			ctx.restore();
 		}
