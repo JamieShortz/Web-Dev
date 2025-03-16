@@ -4,6 +4,10 @@ const file = document.getElementById("fileupload");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 const ctx = canvas.getContext('2d');
+ctx.shadowOffsetX = 5;
+ctx.shadowOffsetY = 5;
+ctx.shadowBlur = 0;
+ctx.shadowColor = 'white';
 let audioSource;
 let analyser;
 
@@ -16,7 +20,7 @@ container.addEventListener('click', function(){
 	analyser = audioContext.createAnalyser();
 	audioSource.connect(analyser);
 	analyser.connect(audioContext.destination);
-	analyser.fftSize = 2048;
+	analyser.fftSize = 64;
 	const bufferLength = analyser.frequencyBinCount;
 	const dataArray = new Uint8Array(bufferLength);
 
@@ -45,7 +49,7 @@ file.addEventListener('change', function(){
 	analyser = audioContext.createAnalyser();
 	audioSource.connect(analyser);
 	analyser.connect(audioContext.destination);
-	analyser.fftSize = 2048;
+	analyser.fftSize = 64;
 	const bufferLength = analyser.frequencyBinCount;
 	const dataArray = new Uint8Array(bufferLength);
 
@@ -68,11 +72,17 @@ function drawVisualizer(bufferLength, x, barWidth, barHeight, dataArray){
 			barHeight = dataArray[i] * 1.5;
 			ctx.save();
 			ctx.translate(canvas.width/2, canvas.height/2);
-			ctx.rotate(i * Math.PI * 10 / bufferLength);
-			const hue = i * 0.4;
-			ctx.fillStyle= 'hsl(' + hue + ',100%,' + barHeight/3 + '%)';
-			ctx.fillRect(0, 0, barWidth, barHeight);
+			ctx.rotate(i * 8.1);
+			const hue = i * 3;
+			ctx.strokeStyle= 'hsl(' + hue + ',100%,' + barHeight/3 + '%)';
+			ctx.font = dataArray[i] + 'px Helvetica';
+			ctx.fillText('A', 40, barHeight * 1.6);
+			ctx.strokeText('A', 40, barHeight * 1.6);
 			x += barWidth;
 			ctx.restore();
 		}
+		const fontSize = dataArray[15] * 3;
+		ctx.font = fontSize + 'px Helvetica';
+		ctx.fillText('A', canvas.width/2 - fontSize/3, canvas.height/2 + fontSize/3);
+		ctx.strokeText('A', canvas.width/2 - fontSize/3, canvas.height/2 + fontSize/3);
 }
