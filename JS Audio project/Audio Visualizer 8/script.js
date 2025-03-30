@@ -73,7 +73,7 @@ function drawVisualizer(bufferLength, x, barWidth, barHeight, dataArray){
 			ctx.fillStyle = 'hsl(' + hue + ',100%,' + barHeight/3 + '%)';
 			ctx.strokeStyle = 'white';
 			ctx.fillRect(barHeight/2, barHeight/2, barWidth, barHeight);
-			barHeight > 80 ?ctx.strokeRect(barHeight/2, barHeight/2, barWidth, barHeight * 1.2) : ctx.strokeRect(0,0,0,0);
+			barHeight > 80 ? ctx.strokeRect(barHeight/2, barHeight/2, barWidth, barHeight * 1.2) : ctx.strokeRect(0,0,0,0);
 			 barHeight > 110 ? ctx.strokeRect(barHeight/2, barHeight * 1.8, barWidth, barHeight * 0.2): ctx.strokeRect(0,0,0,0);
 			x += barWidth;
 			ctx.restore();
