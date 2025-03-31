@@ -4,6 +4,11 @@ const file = document.getElementById("fileupload");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 const ctx = canvas.getContext('2d');
+ctx.lineCap = 'square';
+ctx.shadowOffsetX = 15;
+ctx.shadowOffsetY = 10;
+ctx.shadowBlur = 5;
+ctx.shadowColor = 'black';
 let audioSource;
 let analyser;
 
@@ -16,7 +21,7 @@ container.addEventListener('click', function(){
 	analyser = audioContext.createAnalyser();
 	audioSource.connect(analyser);
 	analyser.connect(audioContext.destination);
-	analyser.fftSize = 2048;
+	analyser.fftSize = 128;
 	const bufferLength = analyser.frequencyBinCount;
 	const dataArray = new Uint8Array(bufferLength);
 
@@ -45,7 +50,7 @@ file.addEventListener('change', function(){
 	analyser = audioContext.createAnalyser();
 	audioSource.connect(analyser);
 	analyser.connect(audioContext.destination);
-	analyser.fftSize = 2048;
+	analyser.fftSize = 128;
 	const bufferLength = analyser.frequencyBinCount;
 	const dataArray = new Uint8Array(bufferLength);
 
@@ -65,14 +70,39 @@ file.addEventListener('change', function(){
 
 function drawVisualizer(bufferLength, x, barWidth, barHeight, dataArray){
 	for (let i = 0; i < bufferLength; i++){
-			barHeight = dataArray[i] * 1.5;
+			barHeight = dataArray[i];
 			ctx.save();
 			ctx.translate(canvas.width/2, canvas.height/2);
-			ctx.rotate(i * Math.PI * 10 / bufferLength);
-			const hue = i * 0.4;
-			ctx.fillStyle= 'hsl(' + hue + ',100%,' + barHeight/3 + '%)';
-			ctx.fillRect(0, 0, barWidth, barHeight);
+			ctx.rotate(i * 6);
+			const hue = i * 0.3;
+
+			ctx.lineWidth = barHeight/4;
+			ctx.beginPath();
+			ctx.moveTo(0, 0);
+			ctx.lineTo(0, barHeight);
+			ctx.stroke();
+
+			ctx.lineWidth = barHeight/5;
+			ctx.strokeStyle = 'rgba(150,150,150,1)';
+			ctx.beginPath();
+			ctx.moveTo(0, 0);
+			ctx.lineTo(0, barHeight);
+			ctx.stroke();
+
 			x += barWidth;
+			ctx.restore();
+		}
+		for (let i = bufferLength; i > 20; i--){
+			barHeight = dataArray[i] > 80 ? dataArray[i] : 80;
+			ctx.save();
+			ctx.translate(canvas.width/2, canvas.height/2);
+			ctx.rotate(i * 3);
+			ctx.lineWidth = 1;
+			ctx.beginPath();
+			ctx.arc(0, barHeight * 3.5, barHeight/3, 0, Math.PI * 2);
+			ctx.fillStyle = 'rgba(150,150,150,1)';
+			ctx.fill();
+			ctx.stroke();
 			ctx.restore();
 		}
 }
