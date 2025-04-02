@@ -4,6 +4,8 @@ const file = document.getElementById("fileupload");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 const ctx = canvas.getContext('2d');
+ctx.lineWidth = 3;
+ctx.globalCompositeOperation = 'difference';
 let audioSource;
 let analyser;
 
@@ -16,7 +18,7 @@ container.addEventListener('click', function(){
 	analyser = audioContext.createAnalyser();
 	audioSource.connect(analyser);
 	analyser.connect(audioContext.destination);
-	analyser.fftSize = 2048;
+	analyser.fftSize = 128;
 	const bufferLength = analyser.frequencyBinCount;
 	const dataArray = new Uint8Array(bufferLength);
 
@@ -45,7 +47,7 @@ file.addEventListener('change', function(){
 	analyser = audioContext.createAnalyser();
 	audioSource.connect(analyser);
 	analyser.connect(audioContext.destination);
-	analyser.fftSize = 2048;
+	analyser.fftSize = 128;
 	const bufferLength = analyser.frequencyBinCount;
 	const dataArray = new Uint8Array(bufferLength);
 
@@ -65,14 +67,23 @@ file.addEventListener('change', function(){
 
 function drawVisualizer(bufferLength, x, barWidth, barHeight, dataArray){
 	for (let i = 0; i < bufferLength; i++){
-			barHeight = dataArray[i] * 1.5;
+			barHeight = dataArray[i] * 2;
 			ctx.save();
 			ctx.translate(canvas.width/2, canvas.height/2);
-			ctx.rotate(i * Math.PI * 10 / bufferLength);
-			const hue = i * 0.4;
-			ctx.fillStyle= 'hsl(' + hue + ',100%,' + barHeight/3 + '%)';
-			ctx.fillRect(0, 0, barWidth, barHeight);
+			ctx.rotate(i * 3.2);
+			const hue = i * 0.1;
+			ctx.strokeStyle = 'hsl(' + hue + ',100%,' + barHeight/3 + '%)';
+			ctx.beginPath();
+			ctx.moveTo(0, 0);
+			ctx.lineTo(0, barHeight);
+			ctx.stroke();
 			x += barWidth;
+			
+			if (i > bufferLength * 0.6){
+				ctx.beginPath();
+				ctx.arc(0, 0, barHeight/1.5, 0, Math.PI * 2);
+				ctx.stroke();
+			}
 			ctx.restore();
 		}
 }
