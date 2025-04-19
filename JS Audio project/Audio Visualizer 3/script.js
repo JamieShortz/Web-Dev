@@ -6,8 +6,9 @@ canvas.height = window.innerHeight;
 const ctx = canvas.getContext('2d');
 let audioSource;
 let analyser;
-const sprite = document.createElement("img");
-sprite.src = 'image/groudon.jpg';
+//const sprite = document.createElement("img");
+let sprite = new Image();
+sprite.src = 'gourd.png';
 document.body.appendChild(sprite);
 
 
