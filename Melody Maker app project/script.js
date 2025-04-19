@@ -1,12 +1,24 @@
 // GLOBALS
 let CANVAS;
 let SPACING;
+let CLEF_IMAGE = new Image();
+CLEF_IMAGE.src= "clef.png";
 
 function main() {
 	CANVAS = document.getElementById("myCanvas");
 	fitToScreen();
 	window.addEventListener('resize',fitToScreen);
 	drawScene();
+}
+
+function drawClef(ctx, location) {
+	let aspectRatio=CLEF_IMAGE.width/CLEF_IMAGE.height;
+	let newHeight=CANVAS.height*0.5;
+	let newWidth=aspectRatio*newHeight;
+
+	ctx.drawImage(CLEF_IMAGE,
+		location.x,location.y,
+		newWidth,newHeight);
 }
 
 function drawNote(ctx,location) {
@@ -63,6 +75,9 @@ function drawScene(){
 		y:CANVAS.height/2
 	}
 	drawNote(ctx,location);
+
+	location.x-=CANVAS.width*0.25;
+	drawClef(ctx,location);
 }
 
 function fitToScreen() {
