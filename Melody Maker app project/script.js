@@ -3,21 +3,53 @@ let CANVAS;
 let SPACING;
 let CLEF_IMAGE = new Image();
 CLEF_IMAGE.src= "clef.png";
+let MOUSE={
+	x:0,
+	y:0,
+	isDown:false
+}
 
 function main() {
 	CANVAS = document.getElementById("myCanvas");
 	fitToScreen();
-	window.addEventListener('resize',fitToScreen);
+	addEventListener();
 	drawScene();
+	animate();
+}
+
+function animate(){
+	drawScene();
+	window.requestAnimationFrame(animate);
+}
+
+function addEventListener() {
+	CANVAS.addEventListener('mousemove',onMouseMove);
+	CANVAS.addEventListener('mousedown',onMouseDown);
+	CANVAS.addEventListener('mouseup',onMouseUp);
+	CANVAS.addEventListener('resize',fitToScreen);
+}
+
+function onMouseMove(event){
+	MOUSE.x=event.x;
+	MOUSE.y=event.y;
+}
+
+function onMouseDown(event){
+	MOUSE.isDown=true;
+	// TO-DO add a note
+}
+
+function onMouseUp(event){
+	MOUSE.isDown=false;
 }
 
 function drawClef(ctx, location) {
 	let aspectRatio=CLEF_IMAGE.width/CLEF_IMAGE.height;
-	let newHeight=CANVAS.height*0.5;
+	let newHeight=CANVAS.height*0.72;
 	let newWidth=aspectRatio*newHeight;
 
 	ctx.drawImage(CLEF_IMAGE,
-		location.x,location.y,
+		location.x-newWidth/2,location.y-newHeight/2.02,
 		newWidth,newHeight);
 }
 
@@ -60,6 +92,7 @@ function drawNote(ctx,location) {
 
 function drawScene(){
 	let ctx=CANVAS.getContext("2d");
+	ctx.clearRect(0,0,CANVAS.width,CANVAS.height);
 	ctx.strokeStyle="black";
 	ctx.lineWidth=1;
 	for(let i=-2; i<=2; i++) {
@@ -74,7 +107,7 @@ function drawScene(){
 		x:CANVAS.width/2,
 		y:CANVAS.height/2
 	}
-	drawNote(ctx,location);
+	drawNote(ctx,MOUSE);
 
 	location.x-=CANVAS.width*0.25;
 	drawClef(ctx,location);
