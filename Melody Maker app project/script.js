@@ -1,6 +1,8 @@
 // GLOBALS
 let CANVAS;
 let SPACING;
+let MARGIN_RIGHT;
+let MARGIN_LEFT;
 let CLEF_IMAGE = new Image();
 CLEF_IMAGE.src= "clef.png";
 let MOUSE={
@@ -104,18 +106,22 @@ function drawScene(){
 	}
 
 	let location={
-		x:CANVAS.width/2,
-		y:CANVAS.height/2
+		x:MARGIN_RIGHT,
+		y:MOUSE.y
 	}
 	drawNote(ctx,MOUSE);
 
-	location.x-=CANVAS.width*0.25;
-	drawClef(ctx,location);
+	drawClef(ctx,{
+		x:MARGIN_LEFT,
+		y:CANVAS.height/2
+	});
 }
 
 function fitToScreen() {
 	CANVAS.width=window.innerWidth;
 	CANVAS.height=window.innerHeight;
 	SPACING=CANVAS.height/20;
+	MARGIN_RIGHT=CANVAS.width*0.8;
+	MARGIN_LEFT=CANVAS.width*0.1;
 	drawScene();
 }
