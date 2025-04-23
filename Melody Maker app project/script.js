@@ -109,7 +109,7 @@ function drawScene(){
 		x:MARGIN_RIGHT,
 		y:MOUSE.y
 	}
-	drawNote(ctx,MOUSE);
+	drawNote(ctx,location);
 
 	drawClef(ctx,{
 		x:MARGIN_LEFT,
