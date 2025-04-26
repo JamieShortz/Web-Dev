@@ -104,10 +104,10 @@ function drawScene(){
 		ctx.lineTo(CANVAS.width,y);
 		ctx.stroke();
 	}
-
+	let index=Math.round(MOUSE.y/SPACING);
 	let location={
 		x:MARGIN_RIGHT,
-		y:MOUSE.y
+		y:index*SPACING
 	}
 	drawNote(ctx,location);
 
