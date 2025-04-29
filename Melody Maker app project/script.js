@@ -62,7 +62,7 @@ function onMouseMove(event){
 
 function onMouseDown(event){
 	MOUSE.isDown=true;
-	// TO-DO add a note
+	MOVING_NOTES.push(new MovingNote(MOUSE));
 }
 
 function onMouseUp(event){
@@ -134,6 +134,10 @@ function drawScene(){
 		y:index*SPACING
 	}
 	drawNote(ctx,location);
+
+	for(let i=0; i<MOVING_NOTES.length;i++){
+		MOVING_NOTES[i].draw(ctx);
+	}
 
 	drawClef(ctx,{
 		x:MARGIN_LEFT,
