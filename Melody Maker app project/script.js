@@ -11,6 +11,8 @@ let MOUSE={
 	isDown:false
 }
 
+let SPEED = 0.005;
+
 let NOTES = ["E6", "D6", "C6", "B5", "A5", "G5", "F5", "E5", "D5", 
 	"C5", "B4", "A4", "G4", "F4", "E4", "D4", "C4", "B3", "A3", "G3", "F3"
 ];
@@ -33,6 +35,9 @@ class MovingNote{
 	draw(ctx){
 		drawNote(ctx, this.location);
 	}
+	play(){
+		console.log("Freq: "+this.frequency);
+	}
 }
 
 function main() {
@@ -43,7 +48,20 @@ function main() {
 	animate();
 }
 
+function updateMovingNotes(){
+	for (let i=0; i<MOVING_NOTES.length; i++){
+		MOVING_NOTES[i].location.x-=SPEED*CANVAS.width;
+		if(MOVING_NOTES[i].location.x<=MARGIN_LEFT){
+			MOVING_NOTES[i].play();
+			MOVING_NOTES.splice(i,1);
+			i--;
+		}
+	}
+}
+
+
 function animate(){
+	updateMovingNotes();
 	drawScene();
 	window.requestAnimationFrame(animate);
 }
@@ -62,7 +80,10 @@ function onMouseMove(event){
 
 function onMouseDown(event){
 	MOUSE.isDown=true;
-	MOVING_NOTES.push(new MovingNote(MOUSE));
+	MOVING_NOTES.push(new MovingNote({
+		x:MARGIN_RIGHT,
+		y:MOUSE.y
+	}));
 }
 
 function onMouseUp(event){
