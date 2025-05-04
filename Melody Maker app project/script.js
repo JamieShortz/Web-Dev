@@ -28,7 +28,7 @@ let AUDIO_CONTEXT;
 class MovingNote{
 	constructor(location){
 		let index=Math.round(location.y/SPACING);
-		this.frequency-FREQ[index];
+		this.frequency=FREQ[index];
 		this.location={
 			x:location.x,
 			y:index*SPACING
@@ -43,6 +43,22 @@ class MovingNote{
 				webkitAudioContext ||
 				window.webkitAudioContext) ()
 		}
+		let duration=1;
+		let osc=AUDIO_CONTEXT.createOscillator();
+		osc.type="triangle";
+		let gainNode=AUDIO_CONTEXT.createGain();
+		gainNode.gain.setValueAtTime(0,AUDIO_CONTEXT.
+		currentTime);
+		gainNode.gain.linearRampToValueAtTime(0.4,
+		AUDIO_CONTEXT.currentTime+0.05);
+		gainNode.gain.linearRampToValueAtTime(0,
+		AUDIO_CONTEXT.currentTime+duration);
+
+		osc.frequency.value=this.frequency;
+		osc.start(AUDIO_CONTEXT.currentTime);		
+		osc.stop(AUDIO_CONTEXT.currentTime+duration);
+		osc.connect(gainNode);
+		gainNode.connect(AUDIO_CONTEXT.destination);
 	}
 }
 
