@@ -23,6 +23,8 @@ let FREQ = [1318.51, 1174.66, 1046.5, 987.767, 880, 783.991, 698.456,
 
 let MOVING_NOTES=[];
 
+let AUDIO_CONTEXT;
+
 class MovingNote{
 	constructor(location){
 		let index=Math.round(location.y/SPACING);
@@ -36,7 +38,11 @@ class MovingNote{
 		drawNote(ctx, this.location);
 	}
 	play(){
-		console.log("Freq: "+this.frequency);
+		if(AUDIO_CONTEXT==null){
+			AUDIO_CONTEXT = new(AudioContext ||
+				webkitAudioContext ||
+				window.webkitAudioContext) ()
+		}
 	}
 }
 
