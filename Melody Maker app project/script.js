@@ -92,6 +92,9 @@ function updateMovingNotes(){
 			i--;
 		}
 	}
+	if(MOUSE.isDown==true && MOVING_NOTES.length>0){
+		MOVING_NOTES[MOVING_NOTES.length-1].update();
+	}
 }
 
 
@@ -193,7 +196,7 @@ function drawScene(){
 		x:MARGIN_RIGHT,
 		y:index*SPACING
 	}
-	drawNote(ctx,location);
+	drawNote(ctx,location, 0.5);
 
 	for(let i=0; i<MOVING_NOTES.length;i++){
 		MOVING_NOTES[i].draw(ctx);
