@@ -19,6 +19,7 @@
 	background: #ffe0e5;
   	width: 400px;
   	padding: 25px 35px;
+  	height: 650px;
   	text-align: center;
 }
 
@@ -28,7 +29,17 @@ nav{
 	margin-botton: 30px;
 }
 
-nav .circle{
+nav .circle1{
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	background: #fff;
+	color: #f53192;
+	box-shadow: 0 5px 10px rgba(255, 26, 26, 0.22);
+}
+
+nav .circle2{
 	border-radius: 50%;
 	width: 40px;
 	height: 40px;
@@ -69,8 +80,8 @@ nav .circle{
 #progress::-webkit-slider-thumb{
 	-webkit-appearance: none;
 	background: #f53192;
-	width: 30px;
-	height: 30px;
+	width: 5px;
+	height: 20px;
 	border-radius: 50%;
 	border: 8px solid #fff;
 	box-shadow: 0 5px 5px rgba(255, 26, 26, 0.22);
@@ -90,7 +101,7 @@ nav .circle{
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	border-radius: 50%;
+	border-radius: 30%;
 	color: #f53192;
 	box-shadow: 0 10px 20px rgba(255, 26, 26, 0.22);
 	cursor: pointer;
