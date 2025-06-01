@@ -19,7 +19,7 @@
 	background: #ffe0e5;
   	width: 400px;
   	padding: 25px 35px;
-  	height: 650px;
+  	height: 700px;
   	text-align: center;
 }
 
@@ -114,9 +114,7 @@ nav .circle2{
   }
 
   .play-all{
-  	position: absolute;
-  	top: 34.7rem;
-  	left: 38rem;
+  	margin: 10px;
   	width: 50px;
 	height: 40px;
   	display: inline-flex;
@@ -129,3 +127,29 @@ nav .circle2{
 	box-shadow: 0 10px 20px rgba(255, 26, 26, 0.22);
 	cursor: pointer;
   }
+
+  .play-all i{
+  	margin: 2px;
+  }
+
+.volume{
+	margin: 20px;
+}
+#volume{
+	-webkit-appearance: none;
+	width: 70%;
+	height: 6px;
+	background: #f53192;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+#volume::-webkit-slider-thumb{
+	-webkit-appearance: none;
+	background: #f53192;
+	width: 1px;
+	height: 10px;
+	border-radius: 50%;
+	border: 8px solid #fff;
+	box-shadow: 0 5px 5px rgba(255, 26, 26, 0.22);
+}
