@@ -9,7 +9,7 @@
 	<body>
 		<div class="container">
 			<div class="music-player">
-				<nav>
+				<nav class="header">
 					<div class="circle1">
 						<i class="fa-solid fa-angle-left"></i>
 					</div>
@@ -47,7 +47,7 @@
 				 	</button>
 				 	<div class="volume">
 				 		<p id="show-volume">50</p>
-				 		<i class="fas fa-volume-up"
+				 		<i class="fas fa-volume-high"
 				 		id="volume-icon"></i>
 				 		<input type="range" 
 				 		id="volume"
@@ -59,7 +59,21 @@
 				 
 			</div>
 			<div class="music-playlist">
-				
+				<nav class="playlist-header">
+					<div class="circlePlay1">
+						<i class="fa-solid fa-angle-left"></i>
+					</div>
+					<h2>Playlist</h2>
+					<div class="circlePlay2">
+						<i class="fas fa-times"></i>
+					</div>
+				</nav>
+			</div>
+			<div class="playlist-div">
+				<div class="playlist">
+					<span class="song-index">1</span>
+					<p class="single-song">Song one</p>
+				</div>
 			</div>
 		</div>
 	<script src= "script.js"></script>

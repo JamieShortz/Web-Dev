@@ -21,15 +21,16 @@
   	padding: 25px 35px;
   	height: 700px;
   	text-align: center;
+  	/*	overflow: hidden; */
 }
 
-nav{
+.header{
 	display: flex;
 	justify-content: space-between;
 	margin-botton: 30px;
 }
 
-nav .circle1{
+.header .circle1{
 	border-radius: 50%;
 	width: 40px;
 	height: 40px;
@@ -39,7 +40,7 @@ nav .circle1{
 	box-shadow: 0 5px 10px rgba(255, 26, 26, 0.22);
 }
 
-nav .circle2{
+.header .circle2{
 	border-radius: 50%;
 	width: 40px;
 	height: 40px;
@@ -152,4 +153,34 @@ nav .circle2{
 	border-radius: 50%;
 	border: 8px solid #fff;
 	box-shadow: 0 5px 5px rgba(255, 26, 26, 0.22);
+}
+
+.music-playlist{
+	position: absolute;	
+	padding: 25px 35px;
+	background: rgba(0,0,0,0.9);
+	width: 400px;
+	height: 700px;
+	transform: translateX(-80%);
+	transition: all 0.5s;
+}
+
+.playlist-header .circlePlay1{
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	background: #fff;
+	color: #f53192;
+	box-shadow: 0 5px 10px rgba(255, 26, 26, 0.22);
+}
+
+.playlist-header .circlePlay2{
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	background: #fff;
+	color: #f53192;
+	box-shadow: 0 5px 10px rgba(255, 26, 26, 0.22);
 }

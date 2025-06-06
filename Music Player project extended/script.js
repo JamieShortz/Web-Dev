@@ -35,5 +35,5 @@ progress.onchange = function(){
 		
 song.addEventListener("ended", function(){
 	ctrlIcon.classList.remove("fa-pause");
-	ctrlIcon.classList.add("fa-play");
+	ctrlIcon.classList.add("fa-rotate-left");
 })
