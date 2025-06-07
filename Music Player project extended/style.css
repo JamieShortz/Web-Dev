@@ -155,13 +155,18 @@
 	box-shadow: 0 5px 5px rgba(255, 26, 26, 0.22);
 }
 
+.song-timer{
+	color: #f53192;
+}
+
 .music-playlist{
 	position: absolute;	
 	padding: 25px 35px;
+	text-align: center;
 	background: rgba(0,0,0,0.9);
 	width: 400px;
 	height: 700px;
-	transform: translateX(-80%);
+	transform: translateX(-108%);
 	transition: all 0.5s;
 }
 
