@@ -157,6 +157,13 @@
 
 .song-timer{
 	color: #f53192;
+	display: flex;
+	justify-content: space-between;
+	font-weight: 600;
+
+}
+#show-volume{
+	color: #f53192;
 }
 
 .music-playlist{
