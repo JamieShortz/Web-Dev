@@ -146,6 +146,11 @@
 	cursor: pointer;
 }
 
+.volume i{
+
+	color: #f53192;
+}
+
 #volume::-webkit-slider-thumb{
 	-webkit-appearance: none;
 	background: #f53192;
