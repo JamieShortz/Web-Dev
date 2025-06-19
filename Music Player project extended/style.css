@@ -147,8 +147,8 @@
 }
 
 .volume i{
-
 	color: #f53192;
+	
 }
 
 #volume::-webkit-slider-thumb{
@@ -179,8 +179,14 @@
 	background: rgba(0,0,0,0.9);
 	width: 400px;
 	height: 700px;
-	transform: translateX(-100%);
+	/*transform: translateX(-100%);*/
 	transition: all 0.5s;
+}
+
+.playlist-header{
+	color: white;
+	padding: 5px 0;
+	border-bottom: 1px solid grey;
 }
 
 .playlist-header .circlePlay1{
@@ -188,9 +194,8 @@
 	width: 40px;
 	height: 40px;
 	line-height: 40px;
-	background: #fff;
 	color: #f53192;
-	box-shadow: 0 5px 10px rgba(255, 26, 26, 0.22);
+
 }
 
 .playlist-header .circlePlay2{
@@ -198,9 +203,8 @@
 	width: 40px;
 	height: 40px;
 	line-height: 40px;
-	background: #fff;
 	color: #f53192;
-	box-shadow: 0 5px 10px rgba(255, 26, 26, 0.22);
+	cursor: pointer;
 }
 
 .playlist-div{
