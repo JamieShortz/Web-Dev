@@ -184,7 +184,7 @@
 }
 
 .playlist-header{
-	color: white;
+	color: #f53192;
 	padding: 5px 0;
 	border-bottom: 1px solid grey;
 }
@@ -208,5 +208,14 @@
 }
 
 .playlist-div{
-	display: none;
+	width: 100%;
+	height: 80vh;
+	overflow-y: auto;
+	padding: 15px;
+}
+
+.playlist{
+	display: flex;
+	align-items: center;
+	color: white;
 }
