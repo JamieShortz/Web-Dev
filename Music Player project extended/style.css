@@ -2,8 +2,7 @@
 	margin: 0;
   	padding: 0;
   	font-family: 'Poppins', sans-serif;
-  	box-sizing: border-box;
-  	overflow: hidden; 	
+  	box-sizing: border-box; 	
 }
 
 .container{
@@ -14,6 +13,7 @@
   	align-items: center;
   	justify-content: center;
   	flex-wrap: wrap;
+  	overflow: hidden;
 }
 
 .music-player{
@@ -23,7 +23,7 @@
   	padding: 25px 35px;
   	height: 700px;
   	text-align: center;
-  	overflow: hidden;
+  	/*overflow: hidden;*/
 }
 
 .header{
@@ -175,7 +175,9 @@
 }
 
 .music-playlist{
-	position: absolute;	
+	position: absolute;
+	bottom: 0.001rem;
+	left: 0.001rem;	
 	padding: 25px 35px;
 	text-align: center;
 	background: rgba(0,0,0,0.9);
