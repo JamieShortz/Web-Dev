@@ -9,6 +9,14 @@ trackImage = document.querySelector(".track-image"),
 title = document.querySelector(".title"),
 artist = document.querySelector(".artist"),
 //
+trackCurrentTime = document.querySelector(".current-time"),
+trackDuration = document.querySelector(".duration-time"),
+//
+showVolume = document.querySelector("#show-volume"),
+volumeIcon = document.querySelector("#volume-icon"),
+currentVolume = document.querySelector("#volume"),
+//
+autoPlay = document.querySelector(".play-all"),
 
 song.onloadedmetadata = function(){
 	progress.max = song.duration;
