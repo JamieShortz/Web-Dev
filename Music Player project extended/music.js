@@ -3,7 +3,7 @@ let trackList = [
 		name: "Don't Push Back",
 		path: "./media/music/dont-push-back-Ryan-Stasik-Kanika-Moore",
 		thumbnail: "./media/images/kanika-moore-push",
-		artist: "Kanika Moore",
+		artist: "Ryan Stasik, Kanika Moore",
 	},
 	{
 		name: "For Granted",
