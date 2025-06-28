@@ -2,21 +2,27 @@ let progress = document.getElementById("progress");
 let song = document.getElementById("song");
 let ctrlIcon = document.getElementById("ctrlIcon");
 const play = document.querySelector(".play"),
-previous = document.querySelector(".prev"),
-next = document.querySelector(".next"),
-//
-trackImage = document.querySelector(".track-image"),
-title = document.querySelector(".title"),
-artist = document.querySelector(".artist"),
-//
-trackCurrentTime = document.querySelector(".current-time"),
-trackDuration = document.querySelector(".duration-time"),
-//
-showVolume = document.querySelector("#show-volume"),
-volumeIcon = document.querySelector("#volume-icon"),
-currentVolume = document.querySelector("#volume"),
-//
-autoPlay = document.querySelector(".play-all"),
+	previous = document.querySelector(".prev"),
+	next = document.querySelector(".next"),
+	//
+	trackImage = document.querySelector(".track-image"),
+	title = document.querySelector(".title"),
+	artist = document.querySelector(".artist"),
+	//
+	trackCurrentTime = document.querySelector(".current-time"),
+	trackDuration = document.querySelector(".duration-time"),
+	//
+	showVolume = document.querySelector("#show-volume"),
+	volumeIcon = document.querySelector("#volume-icon"),
+	currentVolume = document.querySelector("#volume"),
+	//
+	autoPlay = document.querySelector(".play-all"),
+	//
+	lineBars = document.querySelector(".fa-bars"),
+	closeIcon = document.querySelector(".fa-times"),
+	//
+	musicPlaylist = document.querySelector(".music-playlist"),
+	playlist = document.querySelector(".playlist");
 
 song.onloadedmetadata = function(){
 	progress.max = song.duration;
