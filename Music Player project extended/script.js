@@ -24,6 +24,11 @@ const play = document.querySelector(".play"),
 	musicPlaylist = document.querySelector(".music-playlist"),
 	playlist = document.querySelector(".playlist");
 
+	let timer;
+	let autoplay = 0;
+	let indexTrack = 0;
+	let songIsPlaying = false;
+
 song.onloadedmetadata = function(){
 	progress.max = song.duration;
 	progress.value = song.currentTime;
