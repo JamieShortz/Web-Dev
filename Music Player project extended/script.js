@@ -28,6 +28,18 @@ const play = document.querySelector(".play"),
 	let autoplay = 0;
 	let indexTrack = 0;
 	let songIsPlaying = false;
+	let track = document.createElement("audio");
+
+	// All Event Listeners
+	play.addEventListener("click", justplay);
+
+	// Load Tracks
+	function loadTrack(indexTrack) {
+		track.src = trackList[indexTrack].path;
+		trackImage.src = trackList[indexTrack].img;
+		title.innerHTML = trackList[indexTrack].name;
+		artist.innerHTML = trackList[indexTrack].musician;
+	}
 
 song.onloadedmetadata = function(){
 	progress.max = song.duration;
