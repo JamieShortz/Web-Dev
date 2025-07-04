@@ -39,6 +39,13 @@ const play = document.querySelector(".play"),
 		trackImage.src = trackList[indexTrack].img;
 		title.innerHTML = trackList[indexTrack].name;
 		artist.innerHTML = trackList[indexTrack].musician;
+		track.load();
+	}
+	loadTrack(indexTrack);
+
+	// Play Song
+	function playSong(){
+		track.play();
 	}
 
 song.onloadedmetadata = function(){
