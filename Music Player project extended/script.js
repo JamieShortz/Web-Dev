@@ -5,7 +5,7 @@ const play = document.querySelector(".play"),
 	previous = document.querySelector(".prev"),
 	next = document.querySelector(".next"),
 	//
-	trackImage = document.querySelector(".track-image"),
+	trackImage = document.querySelector(".song-img"),
 	title = document.querySelector(".title"),
 	artist = document.querySelector(".artist"),
 	//
