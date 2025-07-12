@@ -32,6 +32,8 @@ const play = document.querySelector(".play"),
 
 	// All Event Listeners
 	play.addEventListener("click", justplay);
+	next.addEventListener("click", nextSong);
+	previous.addEventListener("click", prevSong);
 
 	// Load Tracks
 	function loadTrack(indexTrack) {
