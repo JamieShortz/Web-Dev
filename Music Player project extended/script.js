@@ -1,6 +1,6 @@
-let progress = document.getElementById("progress");
-let song = document.getElementById("song");
-let ctrlIcon = document.getElementById("ctrlIcon");
+//let progress = document.getElementById("progress");
+//let song = document.getElementById("song");
+//let ctrlIcon = document.getElementById("ctrlIcon");
 const play = document.querySelector(".play"),
 	previous = document.querySelector(".prev"),
 	next = document.querySelector(".next"),
@@ -31,25 +31,69 @@ const play = document.querySelector(".play"),
 	let track = document.createElement("audio");
 
 	// All Event Listeners
-	play.addEventListener("click", justplay);
+	play.addEventListener("click", justPlay);
 	next.addEventListener("click", nextSong);
 	previous.addEventListener("click", prevSong);
+
 
 	// Load Tracks
 	function loadTrack(indexTrack) {
 		track.src = trackList[indexTrack].path;
-		trackImage.src = trackList[indexTrack].img;
+		trackImage.src = trackList[indexTrack].thumbnail;
 		title.innerHTML = trackList[indexTrack].name;
 		artist.innerHTML = trackList[indexTrack].musician;
 		track.load();
 	}
 	loadTrack(indexTrack);
 
+	function justPlay(){
+		if (songIsPlaying == false) {
+			playSong();
+		} else{
+			pauseSong();
+		}
+	}
+
 	// Play Song
 	function playSong(){
 		track.play();
+		songIsPlaying = true;
+		play.innerHTML = '<i class="fa-solid fa-pause"></i>';
 	}
 
+	// Pause Song
+	function pauseSong(){
+		track.pause();
+		songIsPlaying = false;
+		play.innerHTML = '<i class="fa-solid fa-play"></i>';
+	}
+
+	//Next Track
+	function nextSong() {
+		if (indexTrack < trackList.length - 1) {
+			indexTrack++;
+			loadTrack(indexTrack);
+			playSong();
+		} else {
+			indexTrack = 0;
+			loadTrack(indexTrack)
+			playSong();
+		}
+	}
+
+	//Prev Track
+	function prevSong() {
+		if (indexTrack > 0) {
+			indexTrack--;
+			loadTrack(indexTrack);
+			playSong();
+		} else {
+			indexTrack = trackList.length - 1;
+			loadTrack(indexTrack)
+			playSong();
+		}
+	}
+/*
 song.onloadedmetadata = function(){
 	progress.max = song.duration;
 	progress.value = song.currentTime;
@@ -85,3 +129,4 @@ song.addEventListener("ended", function(){
 	ctrlIcon.classList.remove("fa-pause");
 	ctrlIcon.classList.add("fa-rotate-left");
 })
+*/
