@@ -1,6 +1,6 @@
-//let progress = document.getElementById("progress");
+let progress = document.getElementById("progress");
 //let song = document.getElementById("song");
-//let ctrlIcon = document.getElementById("ctrlIcon");
+let ctrlIcon = document.getElementById("ctrlIcon");
 const play = document.querySelector(".play"),
 	previous = document.querySelector(".prev"),
 	next = document.querySelector(".next"),
@@ -16,7 +16,7 @@ const play = document.querySelector(".play"),
 	volumeIcon = document.querySelector("#volume-icon"),
 	currentVolume = document.querySelector("#volume"),
 	//
-	autoPlay = document.querySelector(".play-all"),
+	autoPlayBtn = document.querySelector(".play-all"),
 	//
 	lineBars = document.querySelector(".fa-bars"),
 	closeIcon = document.querySelector(".fa-times"),
@@ -30,11 +30,16 @@ const play = document.querySelector(".play"),
 	let songIsPlaying = false;
 	let track = document.createElement("audio");
 
+	play.onloadedmetadata = function(){
+				progress.max = play.duration;
+				progress.value = play.currentTime;
+			}
+
 	// All Event Listeners
 	play.addEventListener("click", justPlay);
 	next.addEventListener("click", nextSong);
 	previous.addEventListener("click", prevSong);
-
+	autoPlayBtn.addEventListener("click", autoPlayToggle);
 
 	// Load Tracks
 	function loadTrack(indexTrack) {
@@ -93,6 +98,38 @@ const play = document.querySelector(".play"),
 			playSong();
 		}
 	}
+
+	// Auto Play
+
+	function autoPlayToggle(){
+		if (autoplay == 0) {
+			autoplay = 1;
+			autoPlayBtn.style.background = "#f53192";
+			autoPlayBtn.style.color = "#fff";
+		} else{
+			autoplay = 0;
+			autoPlayBtn.style.background = "#fff";
+			autoPlayBtn.style.color = "#f53192";
+		}
+	}
+
+if(play.play()){
+	setInterval(()=>{
+		progress.value = play.currentTime;
+	},500);
+}
+
+progress.onchange = function(){
+	play.play();
+	play.currentTime = progress.value;
+	ctrlIcon.classList.add("fa-pause");
+	ctrlIcon.classList.remove("fa-play");
+}
+		
+play.addEventListener("ended", function(){
+	ctrlIcon.classList.remove("fa-pause");
+	ctrlIcon.classList.add("fa-rotate-left");
+})
 /*
 song.onloadedmetadata = function(){
 	progress.max = song.duration;
