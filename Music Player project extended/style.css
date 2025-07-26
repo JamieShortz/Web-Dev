@@ -141,6 +141,8 @@
 }
 #volume{
 	-webkit-appearance: none;
+	position: relative;
+	top:-2.5px;
 	width: 70%;
 	height: 6px;
 	background: #f53192;
