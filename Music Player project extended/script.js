@@ -40,6 +40,8 @@ const play = document.querySelector(".play"),
 	next.addEventListener("click", nextSong);
 	previous.addEventListener("click", prevSong);
 	autoPlayBtn.addEventListener("click", autoPlayToggle);
+	volumeIcon.addEventListener("click", muteSound);
+	currentVolume.addEventListener("change", changeVolume);
 
 	// Load Tracks
 	function loadTrack(indexTrack) {
@@ -97,6 +99,19 @@ const play = document.querySelector(".play"),
 			loadTrack(indexTrack)
 			playSong();
 		}
+	}
+
+	// Mute Sound
+	function muteSound() {
+		track.volume = 0;
+		showVolume.innerHTML = 0;
+		currentVolume.value = 0;
+	}
+
+	// Change Volume
+	function changeVolume() {
+		showVolume.value = currentVolume.value;
+		track.volume = currentVolume.value / 100;
 	}
 
 	// Auto Play

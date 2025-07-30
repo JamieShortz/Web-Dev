@@ -152,7 +152,7 @@
 
 .volume i{
 	color: #f53192;
-	
+	cursor: pointer;
 }
 
 #volume::-webkit-slider-thumb{
