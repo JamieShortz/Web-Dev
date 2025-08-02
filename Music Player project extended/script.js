@@ -1,4 +1,4 @@
-let progress = document.getElementById("progress");
+//let progress = document.getElementById("progress");
 //let song = document.getElementById("song");
 let ctrlIcon = document.getElementById("ctrlIcon");
 const play = document.querySelector(".play"),
@@ -8,6 +8,7 @@ const play = document.querySelector(".play"),
 	trackImage = document.querySelector(".song-img"),
 	title = document.querySelector(".title"),
 	artist = document.querySelector(".artist"),
+	slider = document.getElementById("progress"),
 	//
 	trackCurrentTime = document.querySelector(".current-time"),
 	trackDuration = document.querySelector(".duration-time"),
@@ -42,14 +43,21 @@ const play = document.querySelector(".play"),
 	autoPlayBtn.addEventListener("click", autoPlayToggle);
 	volumeIcon.addEventListener("click", muteSound);
 	currentVolume.addEventListener("change", changeVolume);
+	slider.addEventListener("change", changeDuration);
 
 	// Load Tracks
 	function loadTrack(indexTrack) {
+		clearInterval(timer);
+		resetSlider();
+
+
 		track.src = trackList[indexTrack].path;
 		trackImage.src = trackList[indexTrack].thumbnail;
 		title.innerHTML = trackList[indexTrack].name;
 		artist.innerHTML = trackList[indexTrack].musician;
 		track.load();
+
+		timer = setInterval(updateSlider, 1000);
 	}
 	loadTrack(indexTrack);
 
@@ -76,7 +84,7 @@ const play = document.querySelector(".play"),
 	}
 
 	//Next Track
-	function nextSong() {
+	function nextSong(){
 		if (indexTrack < trackList.length - 1) {
 			indexTrack++;
 			loadTrack(indexTrack);
@@ -102,16 +110,22 @@ const play = document.querySelector(".play"),
 	}
 
 	// Mute Sound
-	function muteSound() {
+	function muteSound(){
 		track.volume = 0;
 		showVolume.innerHTML = 0;
 		currentVolume.value = 0;
 	}
 
 	// Change Volume
-	function changeVolume() {
+	function changeVolume(){
 		showVolume.value = currentVolume.value;
 		track.volume = currentVolume.value / 100;
+	}
+
+	// Change Duration
+	function changeDuration(){
+		let sliderPosition = track.duration * (slider.value / 100);
+		track.currentTime = sliderPosition;
 	}
 
 	// Auto Play
@@ -128,6 +142,27 @@ const play = document.querySelector(".play"),
 		}
 	}
 
+	// Reset Slider
+	function resetSlider(){
+		slider.value = 0;
+	}
+
+	// Update Slider
+	function updateSlider(){
+		let position = 0;
+
+		if (!isNaN(track.duration)) {
+			position = track.currentTime * (100 / track.duration);
+			slider.value = position;
+		}
+	}
+
+/*
+play.addEventListener("ended", function(){
+	ctrlIcon.classList.remove("fa-pause");
+	ctrlIcon.classList.add("fa-rotate-left");
+})
+
 if(play.play()){
 	setInterval(()=>{
 		progress.value = play.currentTime;
@@ -141,11 +176,7 @@ progress.onchange = function(){
 	ctrlIcon.classList.remove("fa-play");
 }
 		
-play.addEventListener("ended", function(){
-	ctrlIcon.classList.remove("fa-pause");
-	ctrlIcon.classList.add("fa-rotate-left");
-})
-/*
+
 song.onloadedmetadata = function(){
 	progress.max = song.duration;
 	progress.value = song.currentTime;
