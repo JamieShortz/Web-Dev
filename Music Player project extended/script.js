@@ -155,6 +155,10 @@ const play = document.querySelector(".play"),
 			position = track.currentTime * (100 / track.duration);
 			slider.value = position;
 		}
+
+		if (track.ended){
+			play.innerHTML = '<i class="fa-solid fa-rotate-left"></i>';
+		}
 	}
 
 /*
