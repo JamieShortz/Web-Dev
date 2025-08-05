@@ -158,6 +158,15 @@ const play = document.querySelector(".play"),
 
 		if (track.ended){
 			play.innerHTML = '<i class="fa-solid fa-rotate-left"></i>';
+			if (autoplay == 1 && indexTrack < trackList.length -1){
+				indexTrack++
+				loadTrack(indexTrack);
+				playSong();
+			} else if (autoplay == 1 && indexTrack == trackList.length - 1) {
+				indexTrack = 0;
+				loadTrack(indexTrack);
+				playSong();
+			}
 		}
 	}
 
