@@ -44,6 +44,7 @@ const play = document.querySelector(".play"),
 	volumeIcon.addEventListener("click", muteSound);
 	currentVolume.addEventListener("change", changeVolume);
 	slider.addEventListener("change", changeDuration);
+	track.addEventListener("timeupdate", updateSongTime);
 
 	// Load Tracks
 	function loadTrack(indexTrack) {
@@ -169,6 +170,15 @@ const play = document.querySelector(".play"),
 			}
 		}
 	}
+
+	// Update song timer
+	function updateSongTime(){
+		let currentMin = Math.floor(track.currentTime / 60);
+		let currentSec = Math.floor(track.currentTime - currentMin * 60);
+		let durationMin = Math.floor(track.duration / 60);
+		let durationSec = Math.floor(track.duration - durationMin * 60);
+	}
+
 
 /*
 play.addEventListener("ended", function(){
