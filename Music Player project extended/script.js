@@ -177,6 +177,19 @@ const play = document.querySelector(".play"),
 		let currentSec = Math.floor(track.currentTime - currentMin * 60);
 		let durationMin = Math.floor(track.duration / 60);
 		let durationSec = Math.floor(track.duration - durationMin * 60);
+
+		if (durationSec < 10) {
+			durationSec = "0" + durationSec;
+		}
+		if (durationMin < 10) {
+			durationMin = "0" + durationMin;
+		}
+		if (currentMin < 10) {
+			currentMin = "0" + currentMin;
+		}
+		if (currentSec < 10) {
+			currentSec = "0" + currentSec;
+		}
 	}
 
 
