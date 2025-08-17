@@ -19,3 +19,8 @@ twentyPer.addEventListener('click', twentyButton);
 fiftyPer.addEventListener('click', fiftyButton);
 customPer.addEventListener('change', custEntry);
 resetButton.addEventListener('click', resetCalc);
+
+billEntry(bill){
+      this.billEntry = parseFloat(bill) ||0;
+      return this;
+}
