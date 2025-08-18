@@ -1,26 +1,25 @@
-const bill = document.getElementById("amount");
-const numPpl = document.getElementById("number");
-const fivePer = document.getElementById("five");
-const tenPer = document.getElementById("ten");
-const fifthPer = document.getElementById("fifthteen");
-const twentyPer = document.getElementById("twentyfive");
-const fiftyPer = document.getElementById("fifty");
-const customPer = document.getElementById("Custom");
-const tipCount = document.getElementById("tipCount");
-const totalCount = document.getElementById("totalCount");
-const resetButton = document.getElementById("reset");
+// Input
+let bill = document.getElementById("amount");
+let numPpl = document.getElementById("number");
+// Buttons
+let tipSelect = document.querySelectorAll("tipBtn");
+let customPer = document.getElementById("Custom");
+let resetButton = document.getElementById("reset");
+// Results
+let tipCount = document.getElementById("tipCount");
+let totalCount = document.getElementById("totalCount");
 
 bill.addEventListener('change', billEntry);
 numPpl.addEventListener('change', pplEntry);
-fivePer.addEventListener('click', fiveButton);
-tenPer.addEventListener('click', tenButton);
-fifthPer.addEventListener('click', fifthButton);
-twentyPer.addEventListener('click', twentyButton);
-fiftyPer.addEventListener('click', fiftyButton);
+tipBtn.addEventListener('click', tipButton);
 customPer.addEventListener('change', custEntry);
 resetButton.addEventListener('click', resetCalc);
 
-billEntry(bill){
-      this.billEntry = parseFloat(bill) ||0;
-      return this;
+let billAmount = 0;
+let tipPercentage = 0;
+let customTipAmt = 0;
+
+function tipButtonClick(e){
+      tipSelect.forEach(btn => btn.classList.remove('active'));
+
 }
