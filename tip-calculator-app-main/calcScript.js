@@ -56,3 +56,29 @@ function split(numberOfPeople){
             perPerson: perPerson
       };
 }
+
+handleTipButtonClick(e){
+      // Removes active class from buttons
+      tipSelect.forEach(btn => btn.classList.remove('active'));
+
+      // Add active class to clicked button
+      e.target.classList.add('active');
+
+      const tipValue = e.target.getAttribute('data-tip');
+
+      if (tipValue === 'custom') {
+            //show custom input
+            customTipAmt.classList.remove('hidden');
+            customTipAmt.focus();
+      } else {
+            //hide custom input and set percentage
+            customTipAmt.classList.add('hidden');
+            calculator.setTipPercentage(parseFloat(tipValue));
+            
+      }
+}
+
+calculateTip() {
+      const billAmount = parseFloat(billEntry.value) || 0;
+
+}
