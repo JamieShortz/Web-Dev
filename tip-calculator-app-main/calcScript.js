@@ -79,6 +79,20 @@ handleTipButtonClick(e){
 }
 
 calculateTip() {
+      // Get input values
       const billAmount = parseFloat(billEntry.value) || 0;
+      const numPpl = parseInt(numPpl.value) || 1;
 
+      // Validate input
+      if (billAmount <= 0) {
+            hideResults();
+            return;
+      }
+
+      //
+      calculator.setBillAmount(billAmount);
+
+      if(!custEntry.classList.contains('hidden')) {
+            
+      }
 }
