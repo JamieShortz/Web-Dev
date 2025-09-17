@@ -15,84 +15,29 @@ tipBtn.addEventListener('click', tipButton);
 customPer.addEventListener('change', custEntry);
 resetButton.addEventListener('click', resetCalc);
 
-let billAmount = 0;
-let tipPercentage = 15;
-let customTipAmt = 0;
+//let billAmount = 0;
+//let tipPercentage = 15;
+let customTipPercentage = 15;
+let isCustomTip = false;
 
-function tipButtonClick(e){
-      tipSelect.forEach(btn => btn.classList.remove('active'));
-}
-
-function setBillAmount(amount){
-      billAmount = parseFloat(amount) || 0;
-}
-
-function setTipPercentage(percentage){
-      tipPercentage = parseFloat(percentage) || 15;
-}
-
-function setCustomTipAmt(amount){
-      customTipAmt = parseFloat(amount) || 0;
-}
-
-function calculate(){
-      const tipAmount = customTipAmt || (billAmount *(tipPercentage / 100));
-      const totalAmount = billAmount + tipAmount;
-      return {
-            bill: billAmount,
-            tip: tipAmount,
-            total: totalAmount,
-            tipPercentage: tipPercentage
-      };
-}
-
-function split(numberOfPeople){
-      const result = calculate();
-      const perPerson = result.total / numberOfPeople;
-
-      return {
-            ...result,
-            numberOfPeople: numberOfPeople,
-            perPerson: perPerson
-      };
-}
-
-handleTipButtonClick(e){
-      // Removes active class from buttons
-      tipSelect.forEach(btn => btn.classList.remove('active'));
-
-      // Add active class to clicked button
-      e.target.classList.add('active');
-
-      const tipValue = e.target.getAttribute('data-tip');
-
-      if (tipValue === 'custom') {
-            //show custom input
-            customTipAmt.classList.remove('hidden');
-            customTipAmt.focus();
-      } else {
-            //hide custom input and set percentage
-            customTipAmt.classList.add('hidden');
-            calculator.setTipPercentage(parseFloat(tipValue));
-            
-      }
-}
-
-calculateTip() {
-      // Get input values
-      const billAmount = parseFloat(billEntry.value) || 0;
-      const numPpl = parseInt(numPpl.value) || 1;
-
-      // Validate input
-      if (billAmount <= 0) {
-            hideResults();
-            return;
+function calculateTip(billAmount, tipPercentage, numPpl = 1) {
+      // Input Validation
+      if(isNaN(billAmount) || billAmount <= 0) {
+            return null;
       }
 
-      //
-      calculator.setBillAmount(billAmount);
-
-      if(!custEntry.classList.contains('hidden')) {
-            
+      if(isNaN(tipPercentage) || tipPercentage < 0) {
+            tipPercentage = 0;
       }
+
+      if(isNaN(numPpl) || numPpl < 1) {
+            numPpl = 1;
+      }
+
+      // Calculations
+      const tipAmount = billAmount * (tipPercentage / 100);
+      const totalCount = billAmount + tipAmount;
+      const perPerson = totalCount / numPpl;
+
+
 }
