@@ -39,5 +39,40 @@ function calculateTip(billAmount, tipPercentage, numPpl = 1) {
       const totalCount = billAmount + tipAmount;
       const perPerson = totalCount / numPpl;
 
+      return {
+            billAmount: parseFloat(billAmount.toFixed(2)),
+            tipPercentage: parseFloat(tipPercentage.toFixed(1)),
+            tipAmount: parseFloat(tipAmount.toFixed(2)),
+            totalCount: parseFloat(totalCount.toFixed(2)),
+            numPpl: numPpl,
+            perPerson: parseFloat(perPerson.toFixed(2))
+      };
 
+}
+
+// Button event handler for tip percentage selection
+function selectTipPercentage(percentage, buttonElement) {
+      // Update global state
+      customTipPercentage = percentage;
+      isCustomTip = false;
+
+      //Update button visual states
+      clearActiveButtons();
+      buttonElement.classList.add('active');
+
+      //Hide custom input
+      hideCustomTipInput();
+
+      //Trigger calculation
+      handleCalculation();
+}
+
+Handle custom tip button click
+function showCustomTipInput(buttonElement) {
+      // Upddate button states
+      clearActiveButtons();
+      buttonElement.classList.add('active');
+
+      // Show custom input
+      const customInput = document.getElementById('');
 }
