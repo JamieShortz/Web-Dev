@@ -67,12 +67,26 @@ function selectTipPercentage(percentage, buttonElement) {
       handleCalculation();
 }
 
-Handle custom tip button click
+// Handle custom tip button click
 function showCustomTipInput(buttonElement) {
       // Upddate button states
       clearActiveButtons();
       buttonElement.classList.add('active');
 
       // Show custom input
-      const customInput = document.getElementById('');
+      const customInput = document.getElementById('Custom');
+      customInput.classList.remove('hidden');
+      customInput.focus();
+
+      // Set flag
+      isCustomTip = true;
+}
+
+function handleCustomTipInput(){
+      if (isCustomTip) {
+            const customValue = parseFloat(document.getElementById('Custom').value
+            ) || 0;
+            currentTipPercentage = customValue;
+            handleCalculation();
+      }
 }
