@@ -77,6 +77,13 @@ padding: 1.5rem;
 width: 20rem;
 background-image: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
 color: hsl(0, 0%, 100%);
+cursor:pointer;
+transition: .1s background ease;
+}
+
+.getStarted:hover{
+color: hsl(0, 0%, 100%);
+background: hsl(176, 68%, 64%);
 }
 
 .curve{
@@ -234,6 +241,15 @@ top: 55rem;
 right: 5rem;
 }
 
+.fyloArrow{
+cursor:pointer;
+transition: .1s background ease;
+}
+
+.fyloArrow:hover{
+filter: brightness(300%);
+}
+
 .fyloWorks{
 margin: auto;
 position:absolute;
@@ -243,7 +259,6 @@ font-weight: 400;
 font-size: 1.1rem;
 top: 64rem;
 left: 47rem;
-
 }
 
 .arrow{
@@ -261,6 +276,8 @@ left: 47rem;
 background-color: hsl(176, 68%, 64%);
 width: 11.4rem;
 height: 0.1rem;
+cursor:pointer;
+transition: .1s background ease;
 }
 
 .quotes{
@@ -449,6 +466,13 @@ padding: 1rem;
 width: 13rem;
 background-image: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
 color: hsl(0, 0%, 100%);
+cursor:pointer;
+transition: .1s background ease;
+}
+
+.getStartedAccess:hover{
+color: hsl(0, 0%, 100%);
+background: hsl(176, 68%, 64%);
 }
 
 .earlyHeader{

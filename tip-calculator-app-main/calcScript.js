@@ -30,7 +30,7 @@ function calculateTip(billAmount, tipPercentage, numPpl = 1) {
             tipPercentage = 0;
       }
 
-      if(isNaN(numPpl) || numPpl < 1) {
+      if(isNaN(numPpl) || numPpl < 1) { // slitCount = numPpl
             numPpl = 1;
       }
 
@@ -81,12 +81,41 @@ function showCustomTipInput(buttonElement) {
       // Set flag
       isCustomTip = true;
 }
-
-function handleCustomTipInput(){
+// Handle custom tip input changes
+function handleCustomTipInput() {
       if (isCustomTip) {
             const customValue = parseFloat(document.getElementById('Custom').value
             ) || 0;
             currentTipPercentage = customValue;
             handleCalculation();
       }
+}
+// Main Calc Handler
+function handleCalculation() {
+      // Get current input values
+      const billAmount = parseFloat(document.getElementById('billAmount').value) || 0;
+      const numPpl = parseFloat(document.getElementById('billAmount').value) || 1; // slitCount = numPpl
+
+      // Calculate using core function
+      const result = calculateTip(billAmount, currentTipPercentage, numPpl);
+
+      //Display results
+      if (result) {
+            displayResults(result);
+      } else {
+            hideResults();
+      }
+      
+}
+// Display results function
+function displayResults(result){
+      // Show results container
+      const resultsDiv = document.getElementById(resultBox);
+
+      // Update all display elements
+      document.getElementById("tipCount").textContent = `$${result.tipAmount}
+            .toFixed(2)}`
+      document.getElementById("totalCount").textContent = `$${result.totalCount}
+            .toFixed(2)}`
+
 }
